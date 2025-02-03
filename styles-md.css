@@ -72,64 +72,8 @@
     display: inline-block;
     animation: zoomText 3s infinite ease-in-out;
   }
-  .text-section {
-    text-align: center;
-  }
-  .hero-clip-path {
-    clip-path: none;
-  }
-  .hero-section {
-    background-image: url(https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/hero-bg-sm.webp);
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-color: #e6f3ef;
-    padding-bottom: 13rem;
-  }
-  .hero-content > .text-section > div > h4 {
-    margin-top: 0px;
-    color: #49887b;
-    font-family: "Greycliff CF";
-    font-size: 39px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
-  }
-  .hero-content > .text-section > div > p {
-    margin-top: 13px;
-    color: #666;
-    text-align: center;
-    font-family: "Greycliff CF";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-  }
-  .register-now-div {
-    margin: 36px auto;
-  }
-  .register-now {
-    width: 200px;
-    margin: 0 auto;
-    border-radius: 35px;
-  }
-  .people-joined {
-    text-align: center;
-    justify-content: center;
-  }
-  .people-joined img {
-    display: none;
-  }
-  .video-section {
-    position: relative;
-    width: calc(100vw - 40px);
-    height: 231px;
-    border-radius: 13px;
-    overflow: hidden;
-    margin: 0 10px;
-  }
+  
+  /* Hero */
   .workshop-iconbox {
     flex-direction: column;
   }
@@ -203,6 +147,7 @@
   }
   .habit-item {
     width: 100%;
+    max-width: 100%;
     display: flex;
     padding: 10px;
     align-items: center;
@@ -220,6 +165,7 @@
     line-height: 19px;
   }
   .habit-seven {
+    background-color: #bfe5dde5;
     padding: 10px 10px 10px 0;
   }
   .habit-item .mb-20 {
@@ -240,6 +186,12 @@
   }
   .habit-seven-img {
     margin-right: 10px;
+  }
+  .habit-seven > div {
+    gap: 0px;   
+  }
+  .register-now-habit{
+    display: none;
   }
   .taTabs {
     margin: 0;
@@ -279,9 +231,7 @@
   .not-for-items {
     width: 45%;
   }
-  .hero-content {
-    flex-direction: column;
-  }
+ 
   .testimonial-div {
     width: 100%;
     background-color: var(--white);
@@ -289,6 +239,10 @@
     border-radius: 10px;
     transition: all 0.3s ease-in;
     margin-bottom: 20px;
+  }
+
+  .other-testimonials{
+    padding: 0px 15px;
   }
   /* .bg-F4F2EB {
     background-color: #ffffff;

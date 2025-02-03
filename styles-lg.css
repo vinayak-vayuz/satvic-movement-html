@@ -6,6 +6,73 @@
   header > section > nav {
     display: none;
   }
+  .hero-clip-path {
+    clip-path: none;
+  }
+  .hero-section {
+    /* background-image: url(https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/hero-bg-sm.webp); */
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #e6f3ef;
+    padding-bottom: 13rem;
+  }
+  .hero-content {
+    flex-direction: column;
+  }
+  .text-section {
+    text-align: center;
+  }
+  .hero-content > .text-section > div > h4 {
+    margin-top: 0px;
+    color: #49887b;
+    font-family: "Greycliff CF";
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  .hero-content > .text-section > div > p {
+    margin-top: 13px;
+    color: #666;
+    text-align: center;
+    font-family: "Greycliff CF";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .register-now-div {
+    margin: 36px auto;
+  }
+  .register-now {
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 35px;
+  }
+  .people-joined {
+    text-align: center;
+    justify-content: center;
+  }
+  .people-joined img {
+    display: none;
+  }
+  .video-section {
+    position: relative;
+    width: calc(100vw - 40px);
+    height: 231px;
+    border-radius: 13px;
+    overflow: hidden;
+    margin: 0 10px;
+  }
+  .first-col.content {
+    width: 100%;
+  }
+  .sidebar {
+    display: none;
+  }
   .workshop-iconbox {
     flex-direction: column;
   }

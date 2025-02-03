@@ -1,0 +1,12 @@
+@media screen and (max-width: 1024px) {
+  section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  header > section > nav {
+    display: none;
+  }
+  .workshop-iconbox {
+    flex-direction: column;
+  }
+}

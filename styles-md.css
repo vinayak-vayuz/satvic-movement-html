@@ -1,0 +1,357 @@
+@media only screen and (max-width: 767px) {
+  .last-day-register {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    background-color: #f4ebe1;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #ba824e;
+    font-weight: 400;
+    outline: none;
+    overflow: hidden;
+    font-size: 16px;
+    /* display: block; */
+  }
+
+  .last-day-register:before {
+    animation: shine 4s ease-in-out infinite;
+  }
+
+  .last-day-register::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      #ba824e96,
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+
+    50% {
+      left: 100%;
+    }
+
+    100% {
+      left: -100px;
+    }
+  }
+  .last-day-register p {
+    font-weight: 500;
+  }
+
+  @keyframes zoomText {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .zoom-text {
+    /* font-size: 2rem; */
+    display: inline-block;
+    animation: zoomText 3s infinite ease-in-out;
+  }
+  .text-section {
+    text-align: center;
+  }
+  .hero-clip-path {
+    clip-path: none;
+  }
+  .hero-section {
+    background-image: url(https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/hero-bg-sm.webp);
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: #e6f3ef;
+    padding-bottom: 13rem;
+  }
+  .hero-content > .text-section > div > h4 {
+    margin-top: 0px;
+    color: #49887b;
+    font-family: "Greycliff CF";
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  .hero-content > .text-section > div > p {
+    margin-top: 13px;
+    color: #666;
+    text-align: center;
+    font-family: "Greycliff CF";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .register-now-div {
+    margin: 36px auto;
+  }
+  .register-now {
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 35px;
+  }
+  .people-joined {
+    text-align: center;
+    justify-content: center;
+  }
+  .people-joined img {
+    display: none;
+  }
+  .video-section {
+    position: relative;
+    width: calc(100vw - 40px);
+    height: 231px;
+    border-radius: 13px;
+    overflow: hidden;
+    margin: 0 10px;
+  }
+  .workshop-iconbox {
+    flex-direction: column;
+  }
+  .ws-iconbox {
+    height: auto;
+
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .ws-iconbox > div > h4 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  .ws-iconbox .image-box img {
+    width: 20px;
+  }
+  .ws-iconbox > div > p {
+    color: #49887b;
+    font-weight: 500;
+    line-height: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-size: 16px;
+  }
+  .sidebar {
+    display: none;
+  }
+  .first-col.content {
+    width: 100%;
+  }
+  .pre-requisite-div {
+    padding: 15px;
+  }
+  .pre-requisite-div h4 {
+    text-align: center;
+    padding: 10px;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .workshop-include-section .d-flex {
+    flex-direction: column;
+  }
+  .width-responsive {
+    width: 100%;
+  }
+  .flex-responsive {
+    flex-direction: column;
+  }
+  .benefits-sections {
+    width: 50%;
+  }
+  .benefits {
+    padding: 30px 10px !important;
+  }
+  .benefits-sections img {
+    height: 200px;
+    object-fit: contain;
+  }
+  .benefit-img {
+    margin-bottom: 5px;
+  }
+  .benefits-sections {
+    margin-bottom: 10px;
+  }
+  .bg-white-section:before {
+    background-image: none;
+    background-color: transparent;
+  }
+  .habit-item {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+  }
+  .habit-heading {
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .habit-text {
+    text-align: left;
+    padding: 0;
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .habit-seven {
+    padding: 10px 10px 10px 0;
+  }
+  .habit-item .mb-20 {
+    margin-bottom: 0px !important;
+    margin-right: 10px;
+  }
+  .habit-item img {
+    min-width: 82px;
+  }
+  .habit-seven .width-40 {
+    display: none !important;
+  }
+  .habit-seven .width-60 {
+    width: 100%;
+  }
+  .habit-seven-img img {
+    min-width: 90px;
+  }
+  .habit-seven-img {
+    margin-right: 10px;
+  }
+  .taTabs {
+    margin: 0;
+  }
+  .taTabs__contentWrap {
+    padding: 0px;
+  }
+  .taTabs__navWap {
+    justify-content: flex-start;
+    margin: 15px 0;
+  }
+  .taTabs__nav {
+  }
+  .days-info {
+    padding: 10px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .program-info {
+    padding: 10px;
+  }
+  .testimonial-main .d-flex {
+    flex-direction: column;
+  }
+  .highlighted-testimonials,
+  .other-testimonials {
+    width: 100%;
+  }
+  .testimoni-top {
+    flex-direction: row !important;
+  }
+  .workshop-for-not-all-inner {
+    flex-wrap: wrap;
+  }
+  .not-for-items {
+    width: 45%;
+  }
+  .hero-content {
+    flex-direction: column;
+  }
+  .testimonial-div {
+    width: 100%;
+    background-color: var(--white);
+    padding: 30px 0px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+    margin-bottom: 20px;
+  }
+  /* .bg-F4F2EB {
+    background-color: #ffffff;
+  } */
+  .who-is-for-item {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+  }
+  .who-is-for-div {
+    flex-direction: column;
+    padding: 0;
+    border-bottom: none;
+  }
+  .who-is-for-item-text .heading {
+    text-align: center;
+  }
+  .who-is-for-item-text .text-details {
+    text-align: center;
+  }
+
+  .who-is-heading {
+    text-align: center;
+  }
+
+  .workshop-not-for {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .workshop-not-subheading {
+    text-align: center;
+    padding: 0 25px;
+  }
+  .wrapper.about-host-div {
+    flex-direction: column;
+  }
+  .read-more-text {
+    padding: 0px 15px;
+  }
+  .register-box {
+    max-height: 729px;
+  }
+  .form-gap-responsive {
+    gap: 20px;
+  }
+  .radio-group label {
+    max-width: 65px;
+  }
+  .form-info-text {
+    font-size: 14px;
+    font-weight: medium;
+    text-align: left;
+  }
+  .terms a {
+    font-size: 13px;
+  }
+  .footer-data {
+    align-items: center;
+  }
+
+  .footer-data div {
+    color: #919191;
+  }
+}

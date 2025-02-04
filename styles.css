@@ -1496,7 +1496,7 @@ picture:hover img {
   line-height: 24px;
   /* text-align: center; */
   color: #c18a6f;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 .read-more-text img {
   width: 10px;
@@ -1518,6 +1518,10 @@ picture:hover img {
 .about-host-div .description {
   overflow: hidden;
   transition: all 0.5s ease-in-out;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
 }
 .about-host-div .button {
   /* display: block; */

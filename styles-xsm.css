@@ -1,8 +1,16 @@
 @media screen and (max-width: 390px) {
+  .contact-us {
+    max-width: 122px;
+    max-height: 30px;
+    font-size: 12px;
+  }
   .hero-section {
     background-image: url(https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/hero-bg-sm.webp);
   }
   .hero-section-ty {
     background-image: url("./images/thank-you/hero-bg-sm.webp");
+  }
+  .ty-session-counter {
+    background-image: url("/images/thank-you/timer-bg.webp");
   }
 }

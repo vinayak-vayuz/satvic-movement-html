@@ -149,4 +149,11 @@
   .workshop-iconbox {
     flex-direction: column;
   }
+  .session-counter-home h3 {
+    display: none;
+  }
+  .session-counter-home h4 {
+    display: block;
+  }
+  
 }

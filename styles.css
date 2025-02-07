@@ -388,46 +388,71 @@ header > section > nav > ul > li:hover {
   line-height: 24px;
 }
 
-.register-now {
-  margin-top: 17px;
-  border-radius: 23px;
+.register-now, .sidebar-register-now, .habit-register-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(92deg, #91b7af -6.15%, #618780 114.84%);
   color: #fff;
-  font-weight: 600;
-  text-align: center;
-  display: flex;
+  border-radius: 23px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.register-now {
+  margin-top: 17px;
   width: 336.37px;
   height: 49.267px;
   padding: 14px 119px;
-  justify-content: center;
-  align-items: center;
+  font-weight: 500;
+  gap: 4px;
+}
+
+.sidebar-register-now {
+  margin: 21px 0;
+  height: 40px;
+  padding: 0 1.75rem;
+  border-radius: 30px;
+}
+
+.habit-register-now {
+  width: 100%;
+  max-width: 188px;
+  height: 44px;
+  padding: 14px 59px;
+  font-weight: 500;
   gap: 10px;
-  flex-shrink: 0;
-  white-space: nowrap;
-  transition-duration: 0.15s !important;
-  transition-property: transform !important;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
-/* .register-text {
-  transform: translate(0.75rem, 0);
-} */
-
-.register-now:hover .register-text {
-  transform: translate(0, 0);
-  transition-duration: 0.3s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.register-now:hover, .sidebar-register-now:hover, .habit-register-now:hover {
+  background: linear-gradient(92deg, #84aba3 -6.15%, #567872 114.84%);
 }
 
-.register-now > img {
-  display: none;
-  transition: all 0.3s ease-in-out;
+.register-text, .sidebar-register-text, .habit-register-text {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
 }
 
-.register-now:hover > img {
-  display: block;
-  transition: translate(0.75rem, 0) 0.3s ease-in-out;
+.register-now .register-text,
+.sidebar-register-now .sidebar-register-text, .habit-register-now .habit-register-text {
+  transform: translateX(8px);
 }
+
+.register-now:hover .register-text,
+.sidebar-register-now:hover .sidebar-register-text, .habit-register-now:hover .habit-register-text {
+  transform: translateX(-8px);
+}
+
+.register-now > img, .sidebar-register-now > img, .habit-register-now > img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.register-now:hover > img, .sidebar-register-now:hover > img, .habit-register-now:hover > img {
+  opacity: 1;
+}
+
 
 .people-joined {
   margin-top: 10px;
@@ -436,6 +461,7 @@ header > section > nav > ul > li:hover {
   gap: 5px;
   color: #c18a6f;
   font-size: 16px;
+  font-weight: 500;
 }
 .people-joined img {
   height: 20px;
@@ -516,6 +542,7 @@ header > section > nav > ul > li:hover {
 }
 
 .pre-requisite-div {
+  margin-top: 45px;
   width: 100%;
   background-color: var(--white);
   padding: 30px;
@@ -648,11 +675,41 @@ header > section > nav > ul > li:hover {
   transition: all 0.3s ease-in;
 }
 
+.habits-parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.habits-parent > div:nth-child(1) {
+  background: rgba(191, 229, 221, 0.9);
+}
+
+.habits-parent > div:nth-child(2) {
+  background: rgba(191, 229, 221, 0.8);
+}
+
+.habits-parent > div:nth-child(3) {
+  background: rgba(191, 229, 221, 0.7);
+}
+
+.habits-parent > div:nth-child(4) {
+  background: rgba(191, 229, 221, 0.6);
+}
+
+.habits-parent > div:nth-child(5) {
+  background: rgba(191, 229, 221, 0.5);
+}
+
+.habits-parent > div:nth-child(6) {
+  background: rgba(191, 229, 221, 0.3);
+}
+
 .habit-item {
   max-width: 222px;
   max-height: 229px;
   text-align: center;
-  background-color: #bfe5dde5;
+  /* background-color: #bfe5dde5; */
   padding: 12px 12px;
   border-radius: 10px;
   transition: all 0.3s ease-in;
@@ -686,7 +743,7 @@ header > section > nav > ul > li:hover {
 .habit-text {
   color: #666666;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 22px;
   text-align: center;
   text-underline-position: from-font;
@@ -698,7 +755,7 @@ header > section > nav > ul > li:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #bfe5dd33;
+  background: rgba(191, 229, 221, 0.2);
   border-radius: 10px;
   margin-top: 20px;
   padding: 24px;
@@ -732,47 +789,6 @@ header > section > nav > ul > li:hover {
 .habit-seven-text .habit-text {
   text-align: left;
   padding: 0;
-}
-
-.register-now-habit {
-  width: 100%;
-  height: 44px;
-  max-width: 188px;
-  border-radius: 23px;
-  padding: 14px 59px;
-  background: linear-gradient(92deg, #91b7af -6.15%, #618780 114.84%);
-  color: #fff;
-  font-weight: 600;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-  white-space: nowrap;
-  transition-duration: 0.15s !important;
-  transition-property: transform !important;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-
-/* .register-now-habit-text {
-  transform: translate(0.75rem, 0);
-  transition: all 0.3s ease-in;
-} */
-
-.register-now-habit:hover .register-now-habit-text {
-  transform: translate(0.1rem, 0);
-  transition: all 0.3s ease-in;
-}
-
-.register-now-habit > img {
-  display: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.register-now-habit:hover > img {
-  display: block;
-  transition: all 0.3s ease-in-out;
 }
 
 .dishes-recipes {
@@ -1284,27 +1300,6 @@ picture:hover img {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-.sidebar-register {
-  margin-top: 21px;
-  margin-bottom: 21px;
-  height: 40px;
-  background: linear-gradient(to right, #91b7af, #618780);
-  color: white;
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.sidebar-register:hover {
-  background: linear-gradient(to left, #91b7af, #618780);
-  opacity: 0.8;
 }
 
 .sidebar-ul {
@@ -1954,6 +1949,19 @@ picture:hover img {
   margin-left: 20px;
 }
 
+.session-counter-home h3 {
+  margin-bottom: 20px;
+  color: #4a4a4a;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px; /* 109.375% */
+}
+
+.session-counter-home h4 {
+  display: none;
+}
+
 .ty-session-counter {
   display: flex;
   flex-direction: column;
@@ -1965,7 +1973,9 @@ picture:hover img {
   height: 100%;
   min-height: 166px;
   max-height: 166px;
-  background-image: url("/images/thank-you/timer-bg.webp");
+  background-image: url("/images/timer-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .ty-session-counter h4 {

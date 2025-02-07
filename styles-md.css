@@ -71,6 +71,12 @@
     background-image: none;
     background-color: transparent;
   }
+  .habits-parent > div {
+    background-color: white !important;
+  }
+  .habit-seven{
+    background-color: white !important;
+  }
   .habit-item {
     width: 100%;
     max-width: 100%;
@@ -91,7 +97,7 @@
     line-height: 19px;
   }
   .habit-seven {
-    background-color: #bfe5dde5;
+    background: rgba(191, 229, 221, 0.2);
     padding: 10px 10px 10px 0;
   }
   .habit-item .mb-20 {

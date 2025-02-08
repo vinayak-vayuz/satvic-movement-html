@@ -122,7 +122,7 @@
   .habit-seven > div {
     gap: 0px;
   }
-  .register-now-habit {
+  .habit-register-now {
     display: none;
   }
   .taTabs {
@@ -183,7 +183,9 @@
     width: 100%;
     text-align: center;
     border-bottom: 1px solid #ddd;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .who-is-for-div {
     flex-direction: column;

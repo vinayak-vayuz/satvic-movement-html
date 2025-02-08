@@ -155,5 +155,26 @@
   .session-counter-home h4 {
     display: block;
   }
-  
+  .workshop-include-section {
+    padding: 20px 19px 24px 19px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .taTabs__nav {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .pr-info-title,
+  .pr-info-detail {
+    font-size: 14px;
+  }
+
+  .day {
+    font-size: 16px;
+  }
+
+  .weekday{
+    font-size: 14px;
+  }
 }

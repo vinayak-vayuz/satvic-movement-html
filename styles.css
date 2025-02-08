@@ -681,7 +681,7 @@ header > section > nav > ul > li:hover {
   gap: 20px;
 }
 
-.habits-parent > div:nth-child(1) {
+/* .habits-parent > div:nth-child(1) {
   background: rgba(191, 229, 221, 0.9);
 }
 
@@ -703,13 +703,13 @@ header > section > nav > ul > li:hover {
 
 .habits-parent > div:nth-child(6) {
   background: rgba(191, 229, 221, 0.3);
-}
+} */
 
 .habit-item {
   max-width: 222px;
   max-height: 229px;
   text-align: center;
-  /* background-color: #bfe5dde5; */
+  background-color: white;
   padding: 12px 12px;
   border-radius: 10px;
   transition: all 0.3s ease-in;
@@ -755,7 +755,7 @@ header > section > nav > ul > li:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(191, 229, 221, 0.2);
+  background-color: white;
   border-radius: 10px;
   margin-top: 20px;
   padding: 24px;
@@ -918,7 +918,7 @@ picture:hover img {
 }
 
 .program-info {
-  background-color: #ecf7f5;
+  background-color: white;
   padding: 10px 30px;
   height: 100px;
   margin-left: 12px;

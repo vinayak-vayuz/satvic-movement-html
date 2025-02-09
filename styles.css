@@ -520,8 +520,8 @@ header > section > nav > ul > li:hover {
   background: linear-gradient(92deg, #84aba3 -6.15%, #567872 114.84%);
 }
 
-.pay-now:hover{
-  background: #F3AB34;
+.pay-now:hover {
+  background: #f3ab34;
 }
 
 .register-text,
@@ -583,6 +583,7 @@ header > section > nav > ul > li:hover {
 }
 
 /* Workshop Iconbox */
+/* Workshop Iconbox */
 .workshop-iconbox {
   margin-top: -10rem;
   display: flex;
@@ -592,20 +593,20 @@ header > section > nav > ul > li:hover {
 
 .ws-iconbox {
   width: 100%;
-  /* height: 160px; */
+  height: 160px;
   max-width: 188px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  align-items: center;
   text-align: center;
   border-radius: 12px;
   border: 1px solid #fff;
   background: #fff;
   backdrop-filter: blur(8.5px);
-  padding: 20px;
   transition: all 0.3s ease-in;
+  position: relative;
+  overflow: hidden;
 }
 
 .ws-iconbox:nth-child(3) {
@@ -625,7 +626,7 @@ header > section > nav > ul > li:hover {
   transition: all 0.3s ease-in;
 }
 
-.ws-iconbox > div > h4 {
+.ws-iconbox-text > h4 {
   color: #44557c;
   text-align: center;
   font-size: 18px;
@@ -634,12 +635,72 @@ header > section > nav > ul > li:hover {
   margin-bottom: 8px;
 }
 
-.ws-iconbox > div > p {
+.ws-iconbox-text > p {
   color: #49887b;
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
   margin-bottom: 5px;
+}
+
+/* Flip Card Styles */
+.flip-card {
+  width: 100%;
+  height: 100%;
+  perspective: 1000px; /* 3D effect */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; /* Enable 3D effect */
+  transition: transform 0.6s; /* Flip transition */
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide back side when flipped */
+}
+
+.flip-card-front {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flip-card-back {
+  background: #65a899;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform: rotateY(180deg); /* Initially hidden at the back */
+  padding: 20px;
+  border-radius: 12px;
+}
+.flip-card-inner.flipped {
+  transform: rotateY(180deg); /* Flip when clicked */
+}
+
+/* Media query for devices up to 1024px */
+@media (max-width: 1024px) {
+  .ws-iconbox {
+    cursor: pointer; /* Make it clear that it's clickable */
+  }
+
+  .flip-card-inner {
+    transform: rotateY(0deg); /* Default rotation state */
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Flip the card on hover */
+  }
 }
 
 .icon-list {
@@ -1158,9 +1219,14 @@ picture:hover img {
   border-radius: 50%;
   margin: 0 auto 20px;
   overflow: hidden;
+  transition: scale 0.3s ease;
+  &:hover {
+    scale: 1.1;
+    transition: scale 0.3s ease;
+  }
 }
 
-.highlighted-testimoni-image img {
+/* .highlighted-testimoni-image img {
   border-radius: 50%;
   transition: scale 0.3s ease;
 }
@@ -1168,7 +1234,7 @@ picture:hover img {
 .highlighted-testimoni-image:hover img {
   scale: 1.1;
   transition: scale 0.3s ease;
-}
+} */
 
 .testimoni-client-name {
   font-size: 22px;
@@ -1498,7 +1564,7 @@ picture:hover img {
   padding: 45px 15px;
 }
 
-.footer-ul{
+.footer-ul {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1805,8 +1871,9 @@ picture:hover img {
   align-items: center;
 }
 .form-select select {
-  padding: 5px 15px;
   width: 100%;
+  height: 42px;
+  padding: 5px 15px;
   padding-left: 0.5rem;
 }
 
@@ -1888,6 +1955,7 @@ picture:hover img {
 }
 
 .register-form-bottom {
+  /* margin-top: 14px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2121,6 +2189,22 @@ picture:hover img {
 .counter-card-container {
   display: flex;
   gap: 23.41px;
+}
+
+.session-counter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  min-height: 166px;
+  max-height: 166px;
+  background-image: url("/images/timer-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .counter-card {

@@ -4,24 +4,36 @@
     flex-direction: row;
   } */
   .ws-iconbox {
+    height: 63px;
+  }
+  .ws-iconbox:nth-child(3) {
+    height: 110px;
+  }
+  .flip-card-front,
+  .flip-card-back {
+    padding: 7px 15px;
     max-width: 100%;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 10px;
   }
-  .ws-iconbox:nth-child(3){
+  .flip-card-back{
+align-items: center;
+  }
+  .ws-iconbox:nth-child(3) {
     max-width: 100%;
   }
-  .ws-iconbox > div > h4 {
+  .ws-iconbox-text h4 {
     text-align: left;
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 0;
+    margin-bottom: 2px;
   }
-  .ws-iconbox .image-box img {
+  .image-box > img {
     width: 20px;
   }
-  .ws-iconbox > div > p {
+  .ws-iconbox-text {
     color: #49887b;
     font-weight: 500;
     line-height: 16px;
@@ -162,7 +174,6 @@
   .testimoni-top {
     flex-direction: row !important;
   }
-  
 
   .testimonial-div {
     width: 100%;
@@ -218,11 +229,9 @@
   .read-more-text {
     padding: 0px 15px;
   }
-  .register-box {
-    max-height: 729px;
-  }
+
   .form-gap-responsive {
-    gap: 20px;
+    gap: 10px;
   }
   .radio-group label {
     max-width: 65px;

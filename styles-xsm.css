@@ -13,4 +13,7 @@
   .ty-session-counter {
     background-image: url("/images/thank-you/timer-bg.webp");
   }
+  .grid-responsive {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

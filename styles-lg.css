@@ -143,11 +143,29 @@
   .first-col.content {
     width: 100%;
   }
+  .workshop-for-not-all{
+    padding: 17px 14px;
+  }
+  .workshop-for-not-all-inner {
+    flex-wrap: wrap;
+  }
+  .not-for-items {
+    max-width: 156px;
+  }
+  .not-for-items-text{
+    font-size: 14px;
+  }
   .sidebar {
     display: none;
   }
   .workshop-iconbox {
     flex-direction: column;
+  }
+  .ws-iconbox {
+    max-width: 100%;
+  }
+  .ws-iconbox:nth-child(3) {
+    max-width: 100%;
   }
   .session-counter-home h3 {
     display: none;
@@ -174,7 +192,7 @@
     font-size: 16px;
   }
 
-  .weekday{
+  .weekday {
     font-size: 14px;
   }
 }

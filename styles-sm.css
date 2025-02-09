@@ -9,4 +9,10 @@
     max-width: 122.609px;
     height: 30px;
   }
+  .grid-responsive {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-responsive {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

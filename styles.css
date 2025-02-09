@@ -97,6 +97,43 @@ img {
   height: auto;
 }
 
+/* Hide default checkbox */
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid white;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Checkbox checked state */
+.custom-checkbox:checked {
+  background-color: #49887b;
+  border-color: white;
+}
+
+/* Checkmark */
+.custom-checkbox:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+}
+
+/* Hover effect */
+.custom-checkbox:hover {
+  border-color: #49887b;
+}
+
 /* common css for the Page */
 .container-class {
   width: 100%;
@@ -143,12 +180,45 @@ img {
   justify-content: space-between;
 }
 
+.grid {
+  display: grid;
+}
+
+.grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
 .mb-60 {
   margin-bottom: 60px;
 }
 
 .form-gap-responsive {
-  gap: 34px;
+  gap: 25px;
 }
 .gap-1 {
   gap: 4px;
@@ -201,7 +271,7 @@ img {
 }
 
 .mt-40 {
-  margin-top: 40px;
+  margin-top: 45px;
 }
 
 .mb-0 {
@@ -294,7 +364,8 @@ header > section > nav > ul > li:hover {
   border: 1px solid #fff;
   background: transparent;
   color: white;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 500;
   transition: color 0.3s ease-in-out;
 }
 
@@ -388,12 +459,13 @@ header > section > nav > ul > li:hover {
   line-height: 24px;
 }
 
-.register-now, .sidebar-register-now, .habit-register-now {
+.register-now,
+.sidebar-register-now,
+.habit-register-now,
+.pay-now {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(92deg, #91b7af -6.15%, #618780 114.84%);
-  color: #fff;
   border-radius: 23px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -401,6 +473,8 @@ header > section > nav > ul > li:hover {
 }
 
 .register-now {
+  background: linear-gradient(92deg, #91b7af -6.15%, #618780 114.84%);
+  color: #fff;
   margin-top: 17px;
   width: 336.37px;
   height: 49.267px;
@@ -410,6 +484,8 @@ header > section > nav > ul > li:hover {
 }
 
 .sidebar-register-now {
+  background: linear-gradient(92deg, #91b7af -6.15%, #618780 114.84%);
+  color: #fff;
   margin: 21px 0;
   height: 40px;
   padding: 0 1.75rem;
@@ -417,6 +493,8 @@ header > section > nav > ul > li:hover {
 }
 
 .habit-register-now {
+  background: linear-gradient(92deg, #91b7af -6.15%, #618780 114.84%);
+  color: #fff;
   width: 100%;
   max-width: 188px;
   height: 44px;
@@ -425,34 +503,63 @@ header > section > nav > ul > li:hover {
   gap: 10px;
 }
 
-.register-now:hover, .sidebar-register-now:hover, .habit-register-now:hover {
+.pay-now {
+  max-width: 188px;
+  height: 46px;
+  width: 100%;
+  /* padding: 9px 56px; */
+  background: #ffd700;
+  color: #418b78;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.register-now:hover,
+.sidebar-register-now:hover,
+.habit-register-now:hover {
   background: linear-gradient(92deg, #84aba3 -6.15%, #567872 114.84%);
 }
 
-.register-text, .sidebar-register-text, .habit-register-text {
+.pay-now:hover{
+  background: #F3AB34;
+}
+
+.register-text,
+.sidebar-register-text,
+.habit-register-text,
+.pay-now-text {
   display: inline-block;
   transition: transform 0.3s ease-in-out;
 }
 
 .register-now .register-text,
-.sidebar-register-now .sidebar-register-text, .habit-register-now .habit-register-text {
+.sidebar-register-now .sidebar-register-text,
+.habit-register-now .habit-register-text,
+.pay-now .pay-now-text {
   transform: translateX(8px);
 }
 
 .register-now:hover .register-text,
-.sidebar-register-now:hover .sidebar-register-text, .habit-register-now:hover .habit-register-text {
+.sidebar-register-now:hover .sidebar-register-text,
+.habit-register-now:hover .habit-register-text,
+.pay-now:hover .pay-now-text {
   transform: translateX(-8px);
 }
 
-.register-now > img, .sidebar-register-now > img, .habit-register-now > img {
+.register-now > img,
+.sidebar-register-now > img,
+.habit-register-now > img,
+.pay-now > svg {
   opacity: 0;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.register-now:hover > img, .sidebar-register-now:hover > img, .habit-register-now:hover > img {
+.register-now:hover > img,
+.sidebar-register-now:hover > img,
+.habit-register-now:hover > img,
+.pay-now:hover > svg {
   opacity: 1;
 }
-
 
 .people-joined {
   margin-top: 10px;
@@ -476,31 +583,33 @@ header > section > nav > ul > li:hover {
 }
 
 /* Workshop Iconbox */
-/* Workshop Iconbox */
 .workshop-iconbox {
   margin-top: -10rem;
   display: flex;
+  overflow: hidden;
   gap: 10px;
 }
 
 .ws-iconbox {
+  width: 100%;
+  /* height: 160px; */
+  max-width: 188px;
   display: flex;
-  width: auto;
-  height: 160px;
-  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
   border-radius: 12px;
   border: 1px solid #fff;
   background: #fff;
   backdrop-filter: blur(8.5px);
   padding: 20px;
-  text-align: center;
-  flex-direction: column;
-  align-content: center;
-  justify-content: flex-start;
-  align-items: center;
-  min-width: 194px;
-  /* box-shadow: 0 0 12px #00000012; */
   transition: all 0.3s ease-in;
+}
+
+.ws-iconbox:nth-child(3) {
+  max-width: 242.427px;
 }
 
 .ws-iconbox:hover {
@@ -520,7 +629,7 @@ header > section > nav > ul > li:hover {
   color: #44557c;
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 22px;
   margin-bottom: 8px;
 }
@@ -572,13 +681,13 @@ header > section > nav > ul > li:hover {
 .pre-requisite-div li {
   color: #666666;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   margin-bottom: 10px;
 }
 
 .divider {
-  border-top: 1px solid #e4e4e4;
+  border-top: 1px solid #c8c8c8;
 }
 
 .whats-include-heading {
@@ -614,7 +723,7 @@ header > section > nav > ul > li:hover {
   font-size: 16px;
   line-height: 24px;
   color: #666666;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .workshop-include-section img {
@@ -635,6 +744,9 @@ header > section > nav > ul > li:hover {
   border-radius: 10px;
   transition: all 0.3s ease-in;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .benefits:hover {
@@ -655,12 +767,17 @@ header > section > nav > ul > li:hover {
 }
 
 .benefit-img {
+  min-height: 244px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .benefits-sections img {
   transition: all 0.3s ease-in;
-  height: 250px;
+  max-height: 244px;
+  object-fit: contain;
+  object-position: bottom;
 }
 
 .benefits-sections p {
@@ -891,7 +1008,7 @@ picture:hover img {
 
 .day {
   color: #49887b;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 22px;
 }
 
@@ -951,7 +1068,7 @@ picture:hover img {
 .whats-say-subheading {
   color: #666666;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   text-align: center;
   text-underline-position: from-font;
@@ -990,11 +1107,11 @@ picture:hover img {
   justify-content: center;
   cursor: pointer;
   color: #fff;
-
   font-weight: 400;
   outline: none;
   overflow: hidden;
   font-size: 16px;
+  white-space: nowrap;
 }
 
 .shine-effect:before {
@@ -1072,7 +1189,7 @@ picture:hover img {
 .testimoni-text {
   /* width: 60%; */
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 26px;
   /* text-align: center; */
   color: #666666;
@@ -1136,6 +1253,10 @@ picture:hover img {
   width: 50%;
 }
 
+.who-is-for-item-img {
+  margin-bottom: 10px;
+}
+
 .who-is-for-item-img img {
   width: 64px;
   height: 64px;
@@ -1159,7 +1280,9 @@ picture:hover img {
 }
 
 .workshop-for-not-all {
-  padding: 30px 0;
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px 28px;
 }
 
 .workshop-not-for {
@@ -1189,10 +1312,11 @@ picture:hover img {
 }
 
 .not-for-items {
-  background-color: #ffffff;
-  border-radius: 10px;
-  width: 25%;
-  padding: 15px;
+  width: 100%;
+  max-width: 154px;
+  padding: 16px 5px;
+  background-color: #f4f2eb;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1217,7 +1341,6 @@ picture:hover img {
 }
 
 .not-for-items-text {
-  padding: 0 20px;
   font-size: 16px;
   font-weight: 500;
   line-height: 19.2px;
@@ -1227,19 +1350,26 @@ picture:hover img {
   color: #666666;
 }
 
-.subhah-images {
+.subah-images {
   border-radius: 22px;
   transition: all 0.3s ease-in;
 }
 
-.subhah-image-div {
+.subah-image-div {
   height: 100%;
   max-height: 499px;
   overflow: hidden;
   border-radius: 22px;
 }
+.subah-and-harsh {
+  transition: all 0.3s ease-in;
+}
 
-.subhah-images:hover {
+.subah-and-harsh:hover {
+  scale: 1.05;
+}
+
+.subah-images:hover {
   scale: 1.05;
   transition: all 0.3s ease-in;
 }
@@ -1368,6 +1498,12 @@ picture:hover img {
   padding: 45px 15px;
 }
 
+.footer-ul{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 /* faq code */
 
 .qna {
@@ -1400,7 +1536,7 @@ picture:hover img {
   cursor: pointer;
   user-select: none;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 27px;
   text-align: left;
   color: #4a4a4a;
@@ -1410,10 +1546,12 @@ picture:hover img {
   content: "";
   position: absolute;
   top: calc(50% - 6px);
-  right: 20px;
+  right: 4px;
   width: 12px;
   height: 8px;
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 12 8'%3E%3Cpath stroke='%23999' stroke-width='2' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+  stroke: #4a4a4a;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 12 8'%3E%3Cpath stroke='%234A4A4A' stroke-width='2' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+
   transition: var(--qna-animation-duration);
 }
 
@@ -1538,7 +1676,7 @@ picture:hover img {
 
 .read-more-text {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   /* text-align: center; */
   color: #c18a6f;
@@ -1592,7 +1730,7 @@ picture:hover img {
 }
 .register-now-heading {
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 30px;
   text-align: center;
   color: #ffffff;
@@ -1628,23 +1766,52 @@ picture:hover img {
   color: #fff;
 }
 .form-input {
+  width: 100%;
   height: 42px;
   border: 1px solid #fff;
   padding-left: 14px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 32px;
   border-radius: 44px;
   color: #fff;
 }
+.form-error {
+  visibility: hidden;
+  margin-top: 3px;
+  color: #ffefa8;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .form-select {
   width: 100%;
   height: 42px;
+  display: flex;
+  align-items: center;
   border: 1px solid #fff;
-  padding: 5px 15px;
-  font-size: 20px;
+
+  font-size: 16px;
   line-height: 32px;
   border-radius: 44px;
   color: #fff;
+}
+.form-select div {
+  width: 48px;
+  height: 100%;
+  border-right: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-select select {
+  padding: 5px 15px;
+  width: 100%;
+  padding-left: 0.5rem;
+}
+
+.form-select option {
+  color: black;
 }
 .iti {
   width: 100%;
@@ -1660,7 +1827,8 @@ picture:hover img {
 .radio-group {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 12px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -1684,7 +1852,8 @@ picture:hover img {
   display: none;
 }
 
-.radio-group input:checked + span {
+.radio-group input:checked + span,
+.radio-group input:hover + span {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1702,29 +1871,16 @@ picture:hover img {
   font-size: 14px;
   margin-bottom: 15px;
 }
-
 .terms a {
+  text-decoration: underline;
+}
+.terms label {
   color: #fff;
   font-family: "Greycliff CF";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-}
-
-.register-form > div > button {
-  max-width: 188px;
-  height: 46px;
-  width: 100%;
-  padding: 9px 56px;
-  border: none;
-  border-radius: 23px;
-  background: #ffd700;
-  color: #418b78;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
 .register-form > button:hover {
@@ -1962,6 +2118,40 @@ picture:hover img {
   display: none;
 }
 
+.counter-card-container {
+  display: flex;
+  gap: 23.41px;
+}
+
+.counter-card {
+  width: 85.924px;
+  height: 72px;
+
+  border-radius: 10.436px;
+  background: #fff;
+  box-shadow: 0px 4.174px 20.872px 0px rgba(43, 43, 43, 0.14);
+}
+
+.counter-card h6 {
+  color: #49887b;
+  text-align: center;
+  font-family: "Greycliff CF";
+  font-size: 30.638px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.counter-card p {
+  color: var(--Grey, #818184);
+  text-align: center;
+  font-family: "Greycliff CF";
+  font-size: 18.323px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .ty-session-counter {
   display: flex;
   flex-direction: column;
@@ -1982,15 +2172,15 @@ picture:hover img {
   color: #fff;
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
-.counter-card-container {
+.ty-counter-card-container {
   display: flex;
   gap: 20px;
 }
 
-.counter-card {
+.ty-counter-card {
   width: 55px;
   height: 49.049px;
   border-radius: 10.436px;
@@ -1998,7 +2188,7 @@ picture:hover img {
   box-shadow: 0px 4.174px 20.872px 0px rgba(43, 43, 43, 0.14);
 }
 
-.counter-card h6 {
+.ty-counter-card h6 {
   color: #49887b;
   text-align: center;
   font-family: "Greycliff CF";
@@ -2008,7 +2198,7 @@ picture:hover img {
   line-height: normal;
 }
 
-.counter-card p {
+.ty-counter-card p {
   color: var(--Grey, #818184);
   text-align: center;
   font-family: "Greycliff CF";

@@ -1,14 +1,16 @@
 @media only screen and (max-width: 767px) {
   /* Hero */
-  .workshop-iconbox {
-    flex-direction: column;
-  }
+  /* .workshop-iconbox {
+    flex-direction: row;
+  } */
   .ws-iconbox {
-    height: auto;
-
+    max-width: 100%;
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;
+  }
+  .ws-iconbox:nth-child(3){
+    max-width: 100%;
   }
   .ws-iconbox > div > h4 {
     text-align: left;
@@ -51,6 +53,9 @@
   .flex-responsive {
     flex-direction: column;
   }
+  .grid-responsive {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .benefits-sections {
     width: 50%;
   }
@@ -74,7 +79,7 @@
   .habits-parent > div {
     background-color: white !important;
   }
-  .habit-seven{
+  .habit-seven {
     background-color: white !important;
   }
   .habit-item {
@@ -157,12 +162,7 @@
   .testimoni-top {
     flex-direction: row !important;
   }
-  .workshop-for-not-all-inner {
-    flex-wrap: wrap;
-  }
-  .not-for-items {
-    width: 45%;
-  }
+  
 
   .testimonial-div {
     width: 100%;

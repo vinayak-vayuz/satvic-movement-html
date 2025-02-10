@@ -192,8 +192,12 @@
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
-  .benefits, .benefit-img{
+  .benefits{
+    padding: 0px;
     background-color: transparent;
+    &:hover{
+      box-shadow: none;
+    }
   }
   .benefit-img {
     min-height: auto;

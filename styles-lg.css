@@ -143,7 +143,7 @@
   .first-col.content {
     width: 100%;
   }
-  .workshop-for-not-all{
+  .workshop-for-not-all {
     padding: 17px 14px;
   }
   .workshop-for-not-all-inner {
@@ -152,7 +152,7 @@
   .not-for-items {
     max-width: 149px;
   }
-  .not-for-items-text{
+  .not-for-items-text {
     font-size: 14px;
   }
   .sidebar {
@@ -192,7 +192,12 @@
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
-
+  .benefits, .benefit-img{
+    background-color: transparent;
+  }
+  .benefit-img {
+    min-height: auto;
+  }
   .taTabs__nav {
     font-weight: 500;
     font-size: 16px;
@@ -209,16 +214,16 @@
   .weekday {
     font-size: 14px;
   }
-  .terms label{
+  .terms label {
     font-size: 13px;
   }
-  .form-input-container{
+  .form-input-container {
     gap: 10px;
   }
   .register-box {
     max-height: 729px;
   }
-  .register-form-bottom{
+  .register-form-bottom {
     margin-top: 34px;
   }
 }

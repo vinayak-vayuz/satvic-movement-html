@@ -273,6 +273,9 @@ img {
 .mt-40 {
   margin-top: 45px;
 }
+.mb-40 {
+  margin-bottom: 45px;
+}
 
 .mb-0 {
   margin-bottom: 0px !important;
@@ -2205,15 +2208,19 @@ picture:hover img {
   background-image: url("https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/timer-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 10px;
 }
 
 .counter-card {
   width: 85.924px;
   height: 72px;
-
   border-radius: 10.436px;
   background: #fff;
   box-shadow: 0px 4.174px 20.872px 0px rgba(43, 43, 43, 0.14);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .counter-card h6 {

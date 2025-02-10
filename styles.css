@@ -2202,7 +2202,7 @@ picture:hover img {
   height: 100%;
   min-height: 166px;
   max-height: 166px;
-  background-image: url("/images/timer-bg.webp");
+  background-image: url("https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/timer-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -2247,7 +2247,7 @@ picture:hover img {
   height: 100%;
   min-height: 166px;
   max-height: 166px;
-  background-image: url("/images/timer-bg.webp");
+  background-image: url("https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/thank-you/timer-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
 }

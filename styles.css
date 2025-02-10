@@ -1354,6 +1354,12 @@ picture:hover img {
   padding: 40px 28px;
 }
 
+.workshop-for-not-all-inner {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .workshop-not-for {
   font-size: 32px;
   line-height: 40.35px;
@@ -1571,6 +1577,7 @@ picture:hover img {
   display: flex;
   align-items: center;
   gap: 10px;
+  white-space: nowrap;
 }
 
 /* faq code */

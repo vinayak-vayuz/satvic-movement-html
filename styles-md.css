@@ -167,8 +167,12 @@ align-items: center;
   .testimonial-main .d-flex {
     flex-direction: column;
   }
+  .testimonial-heading{
+    padding: 0px 4px;
+  }
   .highlighted-testimonials,
   .other-testimonials {
+    padding: 1rem;
     width: 100%;
   }
   .testimoni-top {

@@ -147,10 +147,12 @@
     padding: 17px 14px;
   }
   .workshop-for-not-all-inner {
-    flex-wrap: wrap;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
   .not-for-items {
-    max-width: 149px;
+    max-width: 100%;
   }
   .not-for-items-text {
     font-size: 14px;
@@ -192,10 +194,10 @@
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
-  .benefits{
+  .benefits {
     padding: 0px;
     background-color: transparent;
-    &:hover{
+    &:hover {
       box-shadow: none;
     }
   }
@@ -207,7 +209,7 @@
     font-size: 16px;
   }
   .pr-info-title,
-  .pr-info-detail {
+  .pr-info-details {
     font-size: 14px;
   }
 
@@ -225,7 +227,7 @@
     gap: 10px;
   }
   .register-box {
-    max-height: 729px;
+    max-height: 100%;
   }
   .register-form-bottom {
     margin-top: 34px;

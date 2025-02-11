@@ -117,12 +117,15 @@
             </div>
           </div>
         </div>
-        <div class="video-section">
+        <div
+          class="video-section"
+          style="position: relative; display: inline-block"
+        >
           <video
-            autoplay=""
-            loop=""
-            muted=""
-            playsinline=""
+            id="video"
+            poster="https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/hero-video-thumbnail.webp"
+            loop
+            playsinline
             style="
               position: absolute;
               top: 0;
@@ -134,11 +137,75 @@
             "
           >
             <source
-              src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/videos/homepage-hero-square.mp4"
+              src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/videos/join-the-ultimate-health-challenge-starting-3rd-march-multiple-time-slots-online-workshop.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
           </video>
+          <!-- Play Button -->
+          <button
+            id="playButton"
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="87"
+              height="87"
+              viewBox="0 0 87 87"
+              fill="none"
+            >
+              <ellipse
+                cx="43.0581"
+                cy="43.0881"
+                rx="43.0581"
+                ry="43.0881"
+                fill="#EC4646"
+                fill-opacity="0.3"
+              />
+              <path
+                d="M58.6602 45.6852C60.6591 44.5303 60.6591 41.6448 58.6602 40.4899L37.5163 28.274C35.5163 27.1185 33.0156 28.5619 33.0156 30.8717V55.3034C33.0156 57.6132 35.5163 59.0566 37.5163 57.901L58.6602 45.6852Z"
+                fill="#EC4646"
+              />
+            </svg>
+          </button>
+          <!-- Pause Button -->
+          <button
+            id="pauseButton"
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              display: none;
+              z-index: 1;
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="87"
+              height="87"
+              viewBox="0 0 87 87"
+              fill="none"
+            >
+              <ellipse
+                cx="43.0581"
+                cy="43.0881"
+                rx="43.0581"
+                ry="43.0881"
+                fill="#EC4646"
+                fill-opacity="0.3"
+              />
+              <path
+                d="M58.6602 45.6852C60.6591 44.5303 60.6591 41.6448 58.6602 40.4899L37.5163 28.274C35.5163 27.1185 33.0156 28.5619 33.0156 30.8717V55.3034C33.0156 57.6132 35.5163 59.0566 37.5163 57.901L58.6602 45.6852Z"
+                fill="#EC4646"
+              />
+            </svg>
+          </button>
         </div>
       </main>
     </section>
@@ -222,7 +289,9 @@
                   </div>
                 </div>
                 <div class="flip-card-back">
-                  <p>Recording for each session will be available for 24 hours..</p>
+                  <p>
+                    Recording for each session will be available for 24 hours..
+                  </p>
                 </div>
               </div>
             </div>
@@ -249,7 +318,9 @@
                   </div>
                 </div>
                 <div class="flip-card-back">
-                  <p>Language so simple that even a 5th-grader can understand. </p>
+                  <p>
+                    Language so simple that even a 5th-grader can understand.
+                  </p>
                 </div>
               </div>
             </div>
@@ -276,7 +347,10 @@
                   </div>
                 </div>
                 <div class="flip-card-back">
-                  <p>Select the amount you would like to contribute for this workshop. </p>
+                  <p>
+                    Select the amount you would like to contribute for this
+                    workshop.
+                  </p>
                 </div>
               </div>
             </div>
@@ -837,17 +911,17 @@
                       <div class="program-info">
                         <p>
                           <span class="pr-info-title">Knowledge</span>
-                          <span class="pr-info-details">- Ashtanga Yoga</span>
+                          <span class="pr-info-details">- Shauch</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Practice</span>
                           <span class="pr-info-details"
-                            >- Yoga for Balance</span
+                            >- Suryanamaskar A</span
                           >
                         </p>
                         <p>
                           <span class="pr-info-title">Relaxation</span>
-                          <span class="pr-info-details">- Yoga Nidra</span>
+                          <span class="pr-info-details">- Ujjayi Breathing</span>
                         </p>
                       </div>
                     </div>
@@ -859,15 +933,15 @@
                       <div class="program-info">
                         <p>
                           <span class="pr-info-title">Knowledge</span>
-                          <span class="pr-info-details">- Ahimsa</span>
+                          <span class="pr-info-details">- Santosh</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Practice</span>
-                          <span class="pr-info-details">- Yoga for Legs</span>
+                          <span class="pr-info-details">- Yin Yoga</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Pranayama</span>
-                          <span class="pr-info-details">- Anulom Vilom</span>
+                          <span class="pr-info-details">- Affirmations</span>
                         </p>
                       </div>
                     </div>
@@ -879,17 +953,17 @@
                       <div class="program-info">
                         <p>
                           <span class="pr-info-title">Knowledge</span>
-                          <span class="pr-info-details">- Satya</span>
+                          <span class="pr-info-details">- Tapas</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Practice</span>
                           <span class="pr-info-details"
-                            >- Yoga for Arms & Shoulders</span
+                            >- Suryanamaskar B</span
                           >
                         </p>
                         <p>
                           <span class="pr-info-title">Pranayama</span>
-                          <span class="pr-info-details">- Yogic Breathing</span>
+                          <span class="pr-info-details">- Yoga Nidra</span>
                         </p>
                       </div>
                     </div>
@@ -901,17 +975,17 @@
                       <div class="program-info">
                         <p>
                           <span class="pr-info-title">Knowledge</span>
-                          <span class="pr-info-details">- Asteya</span>
+                          <span class="pr-info-details">- Svadhyaya</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Practice</span>
                           <span class="pr-info-details"
-                            >- Yoga for the Back</span
+                            >- Yoga for flexibility</span
                           >
                         </p>
                         <p>
                           <span class="pr-info-title">Special</span>
-                          <span class="pr-info-details">- Soup fast</span>
+                          <span class="pr-info-details">- Smoothie Fast</span>
                         </p>
                       </div>
                     </div>
@@ -923,18 +997,18 @@
                       <div class="program-info">
                         <p>
                           <span class="pr-info-title">Knowledge</span>
-                          <span class="pr-info-details">- Brahmacharya</span>
+                          <span class="pr-info-details">- Ishwar Pranidhan</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Practice</span>
                           <span class="pr-info-details"
-                            >- Yoga for Hips & Pelvis</span
+                            >- Heart Opening Yoga</span
                           >
                         </p>
                         <p>
                           <span class="pr-info-title">Relaxation</span>
                           <span class="pr-info-details"
-                            >- Guided Meditation</span
+                            >- Kirtan</span
                           >
                         </p>
                       </div>
@@ -947,18 +1021,18 @@
                       <div class="program-info">
                         <p>
                           <span class="pr-info-title">Knowledge</span>
-                          <span class="pr-info-details">- Brahmacharya</span>
+                          <span class="pr-info-details">- Asanas</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Practice</span>
                           <span class="pr-info-details"
-                            >- Yoga for Hips & Pelvis</span
+                            >- Deep stretch</span
                           >
                         </p>
                         <p>
                           <span class="pr-info-title">Relaxation</span>
                           <span class="pr-info-details"
-                            >- Guided Meditation</span
+                            >- Savasana</span
                           >
                         </p>
                       </div>
@@ -971,18 +1045,18 @@
                       <div class="program-info">
                         <p>
                           <span class="pr-info-title">Knowledge</span>
-                          <span class="pr-info-details">- Brahmacharya</span>
+                          <span class="pr-info-details">- Trataka Dhyaan</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Practice</span>
                           <span class="pr-info-details"
-                            >- Yoga for Hips & Pelvis</span
+                            >- Inversions</span
                           >
                         </p>
                         <p>
                           <span class="pr-info-title">Relaxation</span>
                           <span class="pr-info-details"
-                            >- Guided Meditation</span
+                            >- Quiz</span
                           >
                         </p>
                       </div>
@@ -999,17 +1073,17 @@
                       <div class="program-info">
                         <p>
                           <span class="pr-info-title">Knowledge</span>
-                          <span class="pr-info-details">- Ashtanga Yoga</span>
+                          <span class="pr-info-details">- Pranayama</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Practice</span>
                           <span class="pr-info-details"
-                            >- Yoga for Balance</span
+                            >- Detox Yoga</span
                           >
                         </p>
                         <p>
                           <span class="pr-info-title">Relaxation</span>
-                          <span class="pr-info-details">- Yoga Nidra</span>
+                          <span class="pr-info-details">- 3 Types of Pranayama</span>
                         </p>
                       </div>
                     </div>
@@ -1021,15 +1095,15 @@
                       <div class="program-info">
                         <p>
                           <span class="pr-info-title">Knowledge</span>
-                          <span class="pr-info-details">- Ahimsa</span>
+                          <span class="pr-info-details">- Pratyahara</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Practice</span>
-                          <span class="pr-info-details">- Yoga for Legs</span>
+                          <span class="pr-info-details">- Yoga for stress relief</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Pranayama</span>
-                          <span class="pr-info-details">- Anulom Vilom</span>
+                          <span class="pr-info-details">- 5 sense Meditation</span>
                         </p>
                       </div>
                     </div>
@@ -1041,17 +1115,17 @@
                       <div class="program-info">
                         <p>
                           <span class="pr-info-title">Knowledge</span>
-                          <span class="pr-info-details">- Satya</span>
+                          <span class="pr-info-details">- Dharana</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Practice</span>
                           <span class="pr-info-details"
-                            >- Yoga for Arms & Shoulders</span
+                            >- Yoga for Concentration Relaxation</span
                           >
                         </p>
                         <p>
                           <span class="pr-info-title">Pranayama</span>
-                          <span class="pr-info-details">- Yogic Breathing</span>
+                          <span class="pr-info-details">- Mantra Chanting</span>
                         </p>
                       </div>
                     </div>
@@ -1063,17 +1137,17 @@
                       <div class="program-info">
                         <p>
                           <span class="pr-info-title">Knowledge</span>
-                          <span class="pr-info-details">- Asteya</span>
+                          <span class="pr-info-details">- Meaning of OM</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Practice</span>
                           <span class="pr-info-details"
-                            >- Yoga for the Back</span
+                            >- Satvic Yoga Flow</span
                           >
                         </p>
                         <p>
                           <span class="pr-info-title">Special</span>
-                          <span class="pr-info-details">- Soup fast</span>
+                          <span class="pr-info-details">- Om Chanting</span>
                         </p>
                       </div>
                     </div>
@@ -1085,12 +1159,12 @@
                       <div class="program-info">
                         <p>
                           <span class="pr-info-title">Knowledge</span>
-                          <span class="pr-info-details">- Brahmacharya</span>
+                          <span class="pr-info-details">- Dhyan</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Practice</span>
                           <span class="pr-info-details"
-                            >- Yoga for Hips & Pelvis</span
+                            >- Satvic Yoga Flow</span
                           >
                         </p>
                         <p>
@@ -1109,18 +1183,18 @@
                       <div class="program-info">
                         <p>
                           <span class="pr-info-title">Knowledge</span>
-                          <span class="pr-info-details">- Brahmacharya</span>
+                          <span class="pr-info-details">- Samadhi</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Practice</span>
                           <span class="pr-info-details"
-                            >- Yoga for Hips & Pelvis</span
+                            >- Satvic Yoga Flow</span
                           >
                         </p>
                         <p>
                           <span class="pr-info-title">Relaxation</span>
                           <span class="pr-info-details"
-                            >- Guided Meditation</span
+                            >- ABCD of Yoga</span
                           >
                         </p>
                       </div>
@@ -1133,18 +1207,18 @@
                       <div class="program-info">
                         <p>
                           <span class="pr-info-title">Knowledge</span>
-                          <span class="pr-info-details">- Brahmacharya</span>
+                          <span class="pr-info-details">- Trataka Dhyaan</span>
                         </p>
                         <p>
                           <span class="pr-info-title">Practice</span>
                           <span class="pr-info-details"
-                            >- Yoga for Hips & Pelvis</span
+                            >- Satvic Yoga Flow</span
                           >
                         </p>
                         <p>
                           <span class="pr-info-title">Relaxation</span>
                           <span class="pr-info-details"
-                            >- Guided Meditation</span
+                            >- Quiz</span
                           >
                         </p>
                       </div>
@@ -2264,8 +2338,9 @@
                 This Workshop Is <span class="not-text">Not</span> For:
               </h4>
               <p class="workshop-not-subheading">
-                The meal plan followed in this challenge will <strong style="text-decoration: underline;">not</strong> be sufficient
-                for:
+                The meal plan followed in this challenge will
+                <strong style="text-decoration: underline">not</strong> be
+                sufficient for:
               </p>
             </div>
             <div class="workshop-for-not-all-inner">
@@ -2854,7 +2929,7 @@
                     src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/tickmark.svg"
                   />
                 </div>
-                <span style="color: #666;">High energy and focus</span>
+                <span style="color: #666">High energy and focus</span>
               </li>
               <li class="sidebar-li">
                 <div class="sidebar-inner-icon-container">
@@ -2864,7 +2939,7 @@
                     src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/tickmark.svg"
                   />
                 </div>
-                <span style="color: #666;">Reach your optimal weight</span>
+                <span style="color: #666">Reach your optimal weight</span>
               </li>
               <li class="sidebar-li">
                 <div class="sidebar-inner-icon-container">
@@ -2874,7 +2949,7 @@
                     src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/tickmark.svg"
                   />
                 </div>
-                <span style="color: #666;">Eat and sleep better</span>
+                <span style="color: #666">Eat and sleep better</span>
               </li>
             </ul>
             <div class="sidbar-data">
@@ -2902,6 +2977,30 @@
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Curriculum For The 21 Days -->
+
+  <script>
+    document
+      .getElementById("playButton")
+      .addEventListener("click", function () {
+        var video = document.getElementById("video");
+        var playButton = document.getElementById("playButton");
+        var pauseButton = document.getElementById("pauseButton");
+        video.play();
+        playButton.style.display = "none"; // Hide play button
+        pauseButton.style.display = "block"; // Show pause button
+      });
+
+    document
+      .getElementById("pauseButton")
+      .addEventListener("click", function () {
+        var video = document.getElementById("video");
+        var playButton = document.getElementById("playButton");
+        var pauseButton = document.getElementById("pauseButton");
+        video.pause();
+        playButton.style.display = "block"; // Show play button
+        pauseButton.style.display = "none"; // Hide pause button
+      });
+  </script>
 
   <!-- Workshop iconbox flip -->
   <script>

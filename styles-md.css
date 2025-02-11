@@ -152,8 +152,8 @@ align-items: center;
     justify-content: flex-start;
     margin: 15px 0;
   }
-  .taTabs__nav {
-  }
+  /* .taTabs__nav {
+  } */
   .days-info {
     padding: 10px;
     width: 100px;

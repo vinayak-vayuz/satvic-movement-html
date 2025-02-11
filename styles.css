@@ -381,10 +381,11 @@ header > section > nav > ul > li:hover {
 /* Hero Section */
 .hero-section {
   /* min-height: 562px; */
-  background-image: url("./images/hero-bg.webp");
-  background-position: bottom center;
+  background-image: url("./images/hero-bg-2.webp");
+  /* background-position: bottom center; */
   padding-top: 56px;
   padding-bottom: 15rem;
+  background-repeat: no-repeat;
 }
 
 .hero-section-ty {

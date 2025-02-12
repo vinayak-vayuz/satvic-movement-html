@@ -204,7 +204,10 @@
   .benefit-img {
     min-height: auto;
   }
+.habit-item{
 
+  height: auto;
+}
   .scholarship-card-image-parent {
     display: none;
   }

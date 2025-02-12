@@ -208,8 +208,15 @@
   .scholarship-card-image-parent {
     display: none;
   }
-  .scholarship-card-content > p{
+  .scholarship-card-content > p {
     max-width: 100%;
+  }
+  .modal-content > h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #scholarshipForm {
+    gap: 10px;
   }
   .taTabs__nav {
     font-weight: 500;

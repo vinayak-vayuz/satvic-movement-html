@@ -204,6 +204,13 @@
   .benefit-img {
     min-height: auto;
   }
+
+  .scholarship-card-image-parent {
+    display: none;
+  }
+  .scholarship-card-content > p{
+    max-width: 100%;
+  }
   .taTabs__nav {
     font-weight: 500;
     font-size: 16px;

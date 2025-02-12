@@ -25,4 +25,7 @@
   .counter-card p {
     font-size: 12px;
   }
+  .modal-content{
+    max-width: 90%;
+  }
 }

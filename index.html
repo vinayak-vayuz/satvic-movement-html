@@ -2211,12 +2211,18 @@
                 Join our wellness workshops for just ₹300 instead of ₹1000.
                 Apply now to avail this offer
               </p>
-              <button>Apply for Discount</button>
+              <button id="openModalBtn" class="open-modal-btn">
+                Apply for Discount
+              </button>
             </div>
             <div class="scholarship-card-image-parent">
-              <img src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/because-everyone-deserves-a-chance-to-heal.jpg" alt="" />
+              <img
+                src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/because-everyone-deserves-a-chance-to-heal.jpg"
+                alt=""
+              />
             </div>
           </div>
+
           <hr class="divider mt-40" />
           <div class="mt-40">
             <div class="who-is-for">
@@ -2964,7 +2970,6 @@
         </div>
       </div>
     </section>
-
     <footer class="footer-bottom">
       <div class="container-class footer-data">
         <img
@@ -2979,6 +2984,124 @@
         </div>
       </div>
     </footer>
+
+    <!-- Scholarship Modal -->
+    <div id="scholarshipModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModalBtn" class="close"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0017 11.5893L13.9789 15.5665C14.19 15.7776 14.4762 15.8961 14.7747 15.8961C15.0731 15.8961 15.3594 15.7776 15.5704 15.5665C15.7815 15.3555 15.9 15.0692 15.9 14.7708C15.9 14.4723 15.7815 14.1861 15.5704 13.975L11.5917 9.99776L15.5697 6.02051C15.6741 5.91601 15.757 5.79196 15.8135 5.65545C15.87 5.51893 15.899 5.37262 15.899 5.22487C15.899 5.07712 15.8698 4.93083 15.8133 4.79434C15.7567 4.65785 15.6738 4.53384 15.5693 4.42939C15.4648 4.32494 15.3407 4.24209 15.2042 4.18558C15.0677 4.12908 14.9214 4.10001 14.7736 4.10004C14.6259 4.10008 14.4796 4.12921 14.3431 4.18579C14.2066 4.24236 14.0826 4.32526 13.9782 4.42976L10.0017 8.40701L6.02441 4.42976C5.92068 4.32227 5.79658 4.2365 5.65936 4.17748C5.52213 4.11846 5.37452 4.08735 5.22515 4.08598C5.07577 4.08462 4.92762 4.11301 4.78933 4.16951C4.65105 4.22601 4.5254 4.30949 4.41972 4.41507C4.31405 4.52065 4.23045 4.64622 4.17382 4.78445C4.11719 4.92268 4.08865 5.0708 4.08988 5.22018C4.09111 5.36956 4.12207 5.51719 4.18097 5.65447C4.23986 5.79176 4.32551 5.91593 4.43291 6.01976L8.41166 9.99776L4.43366 13.9758C4.32626 14.0796 4.24061 14.2038 4.18172 14.3411C4.12282 14.4783 4.09186 14.626 4.09063 14.7753C4.0894 14.9247 4.11794 15.0728 4.17457 15.2111C4.2312 15.3493 4.31479 15.4749 4.42047 15.5805C4.52615 15.686 4.6518 15.7695 4.79008 15.826C4.92837 15.8825 5.07652 15.9109 5.2259 15.9095C5.37527 15.9082 5.52288 15.8771 5.66011 15.818C5.79733 15.759 5.92143 15.6733 6.02516 15.5658L10.0017 11.5893Z" fill="#4A4A4A"/>
+        </svg></span>
+        <h2>Scholarship Application Form</h2>
+
+        <form id="scholarshipForm">
+          <div>
+            <label class="scholarshipFormLabel" for="name">Name</label>
+            <input
+              class="scholarshipFormInput"
+              type="text"
+              id="name"
+              placeholder="Type name.."
+              required
+            />
+          </div>
+          <div class="d-flex flex-responsive gap-10">
+            <div class="width-responsive">
+              <label class="scholarshipFormLabel" for="mobile"
+                >Mobile Number</label
+              >
+              <div class="mt-5">
+                <input
+                  class="scholarshipFormInput"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Type mobile no*"
+                  required
+                />
+              </div>
+            </div>
+            <div class="width-responsive">
+              <label class="scholarshipFormLabel" for="timeslot"
+                >Choose your time slot</label
+              >
+              <select class="scholarshipFormInput" id="timeslot" required>
+                <option value="">Select one option</option>
+                <option value="morning">6-7 AM (IST)</option>
+                <option value="evening">8-9 AM (IST)</option>
+                <option value="evening">4-5 PM (IST)</option>
+                <option value="evening">8-9 PM (IST)</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label class="scholarshipFormLabel" for="reason"
+              >Reason for the scholarship</label
+            >
+            <select class="scholarshipFormInput" id="reason" required>
+              <option value="">Select one option</option>
+              <option value="financial">I live in a rural area</option>
+              <option value="other">I am a student</option>
+              <option value="other">I have financial constraints</option>
+            </select>
+          </div>
+          <p>
+            To support our movement, we offer a flexible contribution model for
+            those in need. Select the amount that works best for you and join
+            this life-changing workshop
+          </p>
+          <div>
+            <div class="scholarship-amount-options">
+              <label>
+                <input
+                  type="radio"
+                  name="scholarship-amount"
+                  value="490"
+                  required
+                />
+                <span>₹490</span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="scholarship-amount"
+                  value="790"
+                  required
+                  checked
+                />
+                <span>₹790</span>
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  name="scholarship-amount"
+                  value="990"
+                  required
+                />
+                <span>₹990</span>
+              </label>
+            </div>
+            <div class="scholarship-terms-parent">
+              <input style="border-color: #666;" class="custom-checkbox" type="checkbox" id="scholarship-terms" required />
+              <label class="scholarship-terms" for="scholarship-terms"
+                >I agree and accept the
+                <a target="_blank" style="text-decoration: underline;"  href="https://satvicmovement.org/terms-of-services">terms and conditions.</a></label
+              >
+            </div>
+          </div>
+          <button class="scholarship-register-now">
+            <span type="submit" class="scholarship-register-now-text">
+              Register Now
+            </span>
+            <img
+              style="width: 14px"
+              width="14"
+              height="0"
+              src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/home/arrow.svg"
+            />
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Curriculum For The 21 Days -->
@@ -3014,6 +3137,84 @@
     flipCards.forEach((card) => {
       card.addEventListener("click", function () {
         this.querySelector(".flip-card-inner").classList.toggle("flipped");
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const openModalBtn = document.getElementById("openModalBtn");
+      const closeModalBtn = document.getElementById("closeModalBtn");
+      const modal = document.getElementById("scholarshipModal");
+      const form = document.getElementById("scholarshipForm");
+
+      // Open modal
+      openModalBtn.addEventListener("click", () => {
+        modal.classList.remove("hidden");
+        modal.classList.add("show");
+        modal.style.visibility = "visible";
+      });
+
+      // Close modal
+      closeModalBtn.addEventListener("click", () => {
+        modal.classList.remove("show");
+        // Wait for the animation to complete before setting visibility to hidden
+        setTimeout(() => {
+          modal.style.visibility = "hidden";
+        }, 300); // Matches the transition time in CSS
+      });
+
+      // Close modal when clicking outside content
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.add("hidden");
+          modal.classList.remove("show");
+        }
+      });
+
+      // Form Validation
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value.trim();
+        const mobile = document.getElementById("mobile").value.trim();
+        const timeslot = document.getElementById("timeslot").value;
+        const reason = document.getElementById("reason").value;
+        const amount = document.querySelector(
+          'input[name="scholarship-amount"]:checked'
+        ).value;
+        const terms = document.getElementById("scholarship-terms").checked;
+
+        console.log(
+          "Form Data:",
+          name,
+          mobile,
+          timeslot,
+          reason,
+          terms,
+          amount
+        );
+
+        if (!name || !mobile || !timeslot || !reason || !terms || !amount) {
+          alert("Please fill all fields and select an amount.");
+          return;
+        }
+
+        if (!/^\d{10}$/.test(mobile)) {
+          alert("Please enter a valid 10-digit mobile number.");
+          return;
+        }
+
+        alert(`Form submitted successfully! Selected amount: ₹${amount}`);
+
+        // Reset form but preserve the default checked radio button
+        form.reset();
+
+        // Re-check the default amount radio button
+        document.querySelector(
+          'input[name="scholarship-amount"][value="790"]'
+        ).checked = true;
+
+        modal.classList.add("hidden");
       });
     });
   </script>
@@ -3153,19 +3354,29 @@
   <!-- Intl-Tel-Input JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.3/build/js/intlTelInput.min.js"></script>
   <script>
-    const phoneInput = document.querySelector("#phone");
+    document.addEventListener("DOMContentLoaded", function () {
+      // Select all input fields with type="tel"
+      const phoneInputs = document.querySelectorAll('input[type="tel"]');
 
-    const iti = window.intlTelInput(phoneInput, {
-      initialCountry: "in", // Default country (India)
-      preferredCountries: ["in", "us", "gb"],
-      separateDialCode: true, // Displays the country code separately
-      utilsScript:
-        "https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.3/build/js/utils.js",
-    });
+      phoneInputs.forEach((phoneInput) => {
+        const iti = window.intlTelInput(phoneInput, {
+          initialCountry: "in", // Default country (India)
+          preferredCountries: ["in", "us", "gb"],
+          separateDialCode: true, // Displays the country code separately
+          utilsScript:
+            "https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.3/build/js/utils.js",
+        });
 
-    // Optional: Log selected country code on change
-    phoneInput.addEventListener("countrychange", function () {
-      console.log("Selected country:", iti.getSelectedCountryData());
+        // Log selected country code on change
+        phoneInput.addEventListener("countrychange", function () {
+          console.log(
+            "Selected country for",
+            phoneInput,
+            ":",
+            iti.getSelectedCountryData()
+          );
+        });
+      });
     });
   </script>
 

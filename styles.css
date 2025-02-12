@@ -82,7 +82,6 @@ select {
 
 /* Remove default styling for anchors */
 a {
-  
   text-decoration: none;
   color: inherit;
 }
@@ -98,7 +97,8 @@ img {
   height: auto;
 }
 
-button, a {
+button,
+a {
   cursor: pointer;
 }
 
@@ -262,6 +262,9 @@ button, a {
 
 .pt-20 {
   padding-top: 20px !important;
+}
+.mt-5 {
+  margin-top: 5px;
 }
 .mt-20 {
   margin-top: 20px;
@@ -471,7 +474,8 @@ header > section > nav > ul > li:hover {
 .register-now,
 .sidebar-register-now,
 .habit-register-now,
-.pay-now {
+.pay-now,
+.scholarship-register-now {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -522,10 +526,21 @@ header > section > nav > ul > li:hover {
   font-size: 18px;
   font-weight: bold;
 }
+.scholarship-register-now {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  max-width: 100%;
+  width: 100%;
+  height: 46px;
+  border-radius: 42px;
+  background: linear-gradient(90deg, #8ab0a8 0%, #6c918a 100%);
+}
 
 .register-now:hover,
 .sidebar-register-now:hover,
-.habit-register-now:hover {
+.habit-register-now:hover,
+.scholarship-register-now:hover {
   background: linear-gradient(92deg, #84aba3 -6.15%, #567872 114.84%);
 }
 
@@ -536,7 +551,8 @@ header > section > nav > ul > li:hover {
 .register-text,
 .sidebar-register-text,
 .habit-register-text,
-.pay-now-text {
+.pay-now-text,
+.scholarship-register-now-text {
   display: inline-block;
   transition: transform 0.3s ease-in-out;
 }
@@ -544,21 +560,24 @@ header > section > nav > ul > li:hover {
 .register-now .register-text,
 .sidebar-register-now .sidebar-register-text,
 .habit-register-now .habit-register-text,
-.pay-now .pay-now-text {
+.pay-now .pay-now-text,
+.scholarship-register-now .scholarship-register-now-text {
   transform: translateX(8px);
 }
 
 .register-now:hover .register-text,
 .sidebar-register-now:hover .sidebar-register-text,
 .habit-register-now:hover .habit-register-text,
-.pay-now:hover .pay-now-text {
+.pay-now:hover .pay-now-text,
+.scholarship-register-now:hover .scholarship-register-now-text {
   transform: translateX(-8px);
 }
 
 .register-now > img,
 .sidebar-register-now > img,
 .habit-register-now > img,
-.pay-now > svg {
+.pay-now > svg,
+.scholarship-register-now > img {
   opacity: 0;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -566,7 +585,8 @@ header > section > nav > ul > li:hover {
 .register-now:hover > img,
 .sidebar-register-now:hover > img,
 .habit-register-now:hover > img,
-.pay-now:hover > svg {
+.pay-now:hover > svg,
+.scholarship-register-now:hover > img {
   opacity: 1;
 }
 
@@ -1311,7 +1331,7 @@ picture:hover img {
   justify-content: space-between;
   align-items: center;
   gap: 36px;
-  &:hover img{
+  &:hover img {
     scale: 1.1;
   }
 }
@@ -1336,19 +1356,158 @@ picture:hover img {
   text-decoration: underline;
 }
 
-.scholarship-card-image-parent{
+.scholarship-card-image-parent {
   width: 171px;
   height: 123px;
   overflow: hidden;
   border-radius: 12px;
 }
 
-.scholarship-card-image-parent > img{
+.scholarship-card-image-parent > img {
   border-radius: 12px;
   transition: all 0.3s ease-in;
   /* &:hover{
     scale: 1.1;
   } */
+}
+/* Modal Styling */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+/* When modal is open, make it visible */
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Animate modal content when modal is visible */
+.modal.show .modal-content {
+  transform: translateY(0); /* Slide in */
+  opacity: 1;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #f4f2eb;
+  padding: 22px;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0px 4px 20px 0px rgba(43, 43, 43, 0.08);
+  z-index: 500;
+  transform: translateY(500px);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content > h2 {
+  margin-bottom: 15px;
+}
+
+#scholarshipForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#scholarshipForm > p {
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.scholarshipFormLabel {
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.scholarshipFormInput {
+  overflow: hidden;
+  margin-top: 5px;
+  width: 100%;
+  height: 42px;
+  padding: 10.5px 0px 11.5px 18px;
+  align-items: center;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(43, 43, 43, 0.08);
+  &::placeholder {
+    color: #a3a3a3;
+  }
+}
+
+.mobile-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.scholarship-amount-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.scholarship-amount-options label {
+  width: 100%;
+  max-width: 90px;
+  height: 42px;
+  border-radius: 50px;
+  border: 1px solid #666;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.scholarship-amount-options input {
+  display: none;
+}
+
+.scholarship-amount-options input:checked + span {
+  width: 100%;
+  height: 100%;
+  background: #418b78;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scholarship-terms-parent {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+.scholarship-terms {
+  color: #666;
 }
 
 .who-is-for {

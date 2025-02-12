@@ -865,6 +865,10 @@ header > section > nav > ul > li:hover, .privacy-policy:hover, .tandc:hover {
   margin-bottom: 30px;
 }
 
+.benefits-sections > p {
+  margin-top: 17px;
+}
+
 .benefit-img {
   min-height: 244px;
   margin-bottom: 20px;
@@ -1281,7 +1285,7 @@ picture:hover img {
 
 .testimoni-client-name {
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 26.91px;
   text-align: center;
   color: #49887b;

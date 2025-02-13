@@ -2562,6 +2562,24 @@ picture:hover img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Animation when updating the countdown */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation when the countdown updates */
+.counter-card.slide-up {
+  animation: slideUp 0.5s ease-out;
 }
 
 .counter-card-hero {

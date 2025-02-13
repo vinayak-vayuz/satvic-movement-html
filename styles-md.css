@@ -3,6 +3,7 @@
   /* .workshop-iconbox {
     flex-direction: row;
   } */
+
   .ws-iconbox {
     height: 63px;
   }
@@ -18,7 +19,7 @@
     align-items: flex-start;
     gap: 10px;
   }
-  .flip-card-back{
+  .flip-card-back {
     align-items: center;
     text-align: start;
   }
@@ -32,7 +33,9 @@
     margin-bottom: 2px;
   }
   .image-box > img {
+    margin-top: 6px;
     width: 20px;
+    height: 20px;
   }
   .ws-iconbox-text {
     color: #49887b;
@@ -168,7 +171,7 @@
   .testimonial-main .d-flex {
     flex-direction: column;
   }
-  .testimonial-heading{
+  .testimonial-heading {
     padding: 0px 4px;
   }
   .highlighted-testimonials,

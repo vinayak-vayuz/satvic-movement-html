@@ -286,10 +286,10 @@
                       src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/clock.svg"
                     />
                   </div>
-                  <div class="ws-iconbox-text">
-                    <h4>Choose Time Slot (IST)</h4>
+                  <div class="ws-iconbox-text" id="ws-time-slot-container">
+                    <!-- <h4>Choose Time Slot (IST)</h4>
                     <p>6-7 am | 8-9 am</p>
-                    <p>4-5 pm | 8-9 pm</p>
+                    <p>4-5 pm | 8-9 pm</p> -->
                   </div>
                 </div>
                 <div class="flip-card-back">
@@ -506,7 +506,7 @@
               <h2 class="whats-include-heading mb-0">Benefits You Will Gain</h2>
               <p class="benefits-subheading">by taking this challenge</p>
             </div>
-            <div style="margin-top: 10px;" class="d-flex flex-wrap gap-5">
+            <div style="margin-top: 10px" class="d-flex flex-wrap gap-5">
               <div class="benefits-sections">
                 <div class="benefit-img">
                   <img
@@ -2761,7 +2761,7 @@
                       <span>₹990</span>
                     </label>
                     <label>
-                      <input type="radio" name="amount" value="1490"  />
+                      <input type="radio" name="amount" value="1490" />
                       <span>₹1490</span>
                     </label>
                     <label>
@@ -3053,7 +3053,6 @@
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- Curriculum For The 21 Days -->
-
   <script>
     document
       .getElementById("playButton")
@@ -3076,6 +3075,41 @@
         playButton.style.display = "block"; // Show play button
         pauseButton.style.display = "none"; // Hide pause button
       });
+  </script>
+
+  <script>
+    // Function to get session details based on sessionType
+    function getSessionDetails(sessionType) {
+      if (sessionType === "multi") {
+        return `
+        <h4>Choose Time Slot (IST)</h4>
+        <p>Morning: 8-9 AM</p>
+        <p>Afternoon: 12-1 PM</p>
+        <p>Evening: 6-7 PM</p>
+      `;
+      } else {
+        return `
+        <h4>Choose Time Slot (IST)</h4>
+        <p>6-7 am | 8-9 am</p>
+        <p>4-5 pm | 8-9 pm</p>
+      `;
+      }
+    }
+
+    // Function to get query parameter value from the URL
+    function getQueryParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name); // Returns the value of the query parameter
+    }
+
+    // Get the session from the URL query parameter
+    const sessionType = getQueryParameter("session") || "multi"; // Default to "multi" if not provided
+
+    // Get the session container where the content will be inserted
+    const sessionContainer = document.getElementById("ws-time-slot-container");
+
+    // Render the session details based on sessionType
+    sessionContainer.innerHTML = getSessionDetails(sessionType);
   </script>
 
   <!-- Workshop iconbox flip -->

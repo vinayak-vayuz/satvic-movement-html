@@ -83,13 +83,14 @@
   }
   .hero-section {
     /* background-image: url(https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/hero-bg-sm.webp); */
+    padding-top: 36px;
     padding-left: 10px !important;
     padding-right: 10px !important;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
     background-color: #e6f3ef;
-    padding-bottom: 13rem;
+    padding-bottom: 10rem;
   }
 
   .hero-content {

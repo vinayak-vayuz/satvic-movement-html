@@ -403,7 +403,7 @@ header > section > nav > ul > li:hover,
 }
 
 .hero-section-ty {
-  min-height: 206px;
+  min-height: 212px;
   padding-top: 20px;
   background-image: url("./images/thank-you/hero-bg.webp");
   background-position: top center;
@@ -434,6 +434,9 @@ header > section > nav > ul > li:hover,
   line-height: 21px; /* 150% */
 }
 .hero-clip-path {
+  clip-path: ellipse(105% 50% at 52% 42%);
+}
+.hero-clip-path-ty {
   clip-path: ellipse(105% 50% at 52% 42%);
 }
 
@@ -1812,6 +1815,15 @@ picture:hover img {
   align-items: center;
   gap: 10px;
   white-space: nowrap;
+  color: #666;
+}
+.ty-footer-ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  color: #919191;
+  font-size: 15px;
 }
 
 /* faq code */
@@ -2211,11 +2223,23 @@ picture:hover img {
   padding: 30px;
   margin-top: 80px;
 }
+.footer-bottom-ty {
+  height: 105px;
+  background-color: #f9f9fb;
+  padding: 14px;
+  margin-top: 80px;
+}
 
 .footer-data {
   display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 14px;
+}
+.footer-data-ty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 14px;
 }
 
@@ -2225,6 +2249,10 @@ picture:hover img {
 
 .logo-footer {
   width: 150px;
+  margin-bottom: 10px;
+}
+.logo-footer-ty {
+  width: 101px;
   margin-bottom: 10px;
 }
 .last-day-register {
@@ -2278,7 +2306,7 @@ picture:hover img {
 .ty-card h3 {
   color: #4a4a4a;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 165%;
 }
 .ty-card label {
@@ -2291,10 +2319,8 @@ picture:hover img {
 }
 .ty-card p {
   color: #666;
-  font-family: "Greycliff CF";
   font-size: 14px;
-
-  font-weight: 400;
+  font-weight: 500;
   line-height: 20px; /* 142.857% */
 }
 .ty-card span {
@@ -2548,6 +2574,10 @@ picture:hover img {
   height: 49.049px;
   border-radius: 10.436px;
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0px 4.174px 20.872px 0px rgba(43, 43, 43, 0.14);
 }
 

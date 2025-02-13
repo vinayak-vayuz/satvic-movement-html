@@ -177,7 +177,9 @@
   .flip-card-inner {
     transform: rotateY(0deg);
   }
-
+.session-counter-hero{
+  display: none;
+}
   .session-counter-home h3 {
     display: none;
   }

@@ -402,7 +402,7 @@ header > section > nav > ul > li:hover,
   background-image: url("./images/hero-bg-2.webp");
   background-position: top center;
   padding-top: 56px;
-  padding-bottom: 15rem;
+  padding-bottom: 12rem;
   background-repeat: no-repeat;
 }
 
@@ -2021,9 +2021,17 @@ picture:hover img {
   /* text-align: center; */
   color: #c18a6f;
   padding: 0 15px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: #90634e;
+  }
 }
 .read-more-text img {
+  margin-top: -6px;
   width: 10px;
+  &:hover {
+    color: #90634e;
+  }
 }
 
 .wrapper.about-host-div {
@@ -2502,9 +2510,14 @@ picture:hover img {
   margin-bottom: 20px;
   color: #4a4a4a;
   font-size: 32px;
-
   font-weight: 700;
   line-height: 35px; /* 109.375% */
+}
+
+.session-counter-hero > h3 {
+  color: #666;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .session-counter-home h4 {
@@ -2512,6 +2525,12 @@ picture:hover img {
 }
 
 .counter-card-container {
+  display: flex;
+  gap: 23.41px;
+}
+
+.counter-card-container-hero {
+  margin-top: 10px;
   display: flex;
   gap: 23.41px;
 }
@@ -2545,6 +2564,18 @@ picture:hover img {
   align-items: center;
 }
 
+.counter-card-hero {
+  width: 51.064px;
+  height: 45.539px;
+  border-radius: 10.436px;
+  background: #fff;
+  box-shadow: 0px 4.174px 20.872px 0px rgba(43, 43, 43, 0.14);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .counter-card h6 {
   color: #49887b;
   text-align: center;
@@ -2555,12 +2586,32 @@ picture:hover img {
   line-height: normal;
 }
 
+.counter-card-hero h6 {
+  color: #49887b;
+  text-align: center;
+  font-family: "Greycliff CF";
+  font-size: 19.378px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .counter-card p {
   color: var(--Grey, #818184);
   text-align: center;
   font-family: "Greycliff CF";
   font-size: 18.323px;
 
+  font-weight: 400;
+  line-height: normal;
+}
+
+.counter-card-hero p {
+  color: var(--Grey, #818184);
+  text-align: center;
+  font-family: "Greycliff CF";
+  font-size: 11.627px;
+  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }

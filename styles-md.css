@@ -19,7 +19,8 @@
     gap: 10px;
   }
   .flip-card-back{
-align-items: center;
+    align-items: center;
+    text-align: start;
   }
   .ws-iconbox:nth-child(3) {
     max-width: 100%;

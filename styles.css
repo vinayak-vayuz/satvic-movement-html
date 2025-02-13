@@ -638,7 +638,7 @@ header > section > nav > ul > li:hover,
   justify-content: flex-start;
   text-align: center;
   border-radius: 12px;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   background: #fff;
   backdrop-filter: blur(8.5px);
   transition: all 0.3s ease-in;
@@ -725,18 +725,14 @@ header > section > nav > ul > li:hover,
   transform: rotateY(180deg); /* Flip when clicked */
 }
 
+.flip-card-inner.unflipped {
+  transform: rotateY(0deg);
+}
+
 /* Media query for devices up to 1024px */
 @media (max-width: 1024px) {
   .ws-iconbox {
     cursor: pointer; /* Make it clear that it's clickable */
-  }
-
-  .flip-card-inner {
-    transform: rotateY(0deg); /* Default rotation state */
-  }
-
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg); /* Flip the card on hover */
   }
 }
 
@@ -2471,7 +2467,7 @@ picture:hover img {
 .step-content {
   width: 100%;
   margin-left: 20px;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 
 .session-counter-home h3 {

@@ -487,7 +487,8 @@ header > section > nav > ul > li:hover,
 .sidebar-register-now,
 .habit-register-now,
 .pay-now,
-.scholarship-register-now {
+.scholarship-register-now,
+.ty-form-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -549,10 +550,22 @@ header > section > nav > ul > li:hover,
   background: linear-gradient(90deg, #8ab0a8 0%, #6c918a 100%);
 }
 
+.ty-form-button {
+  margin-top: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  max-width: 100%;
+  width: 100%;
+  height: 46px;
+  background: linear-gradient(90deg, #8ab0a8 0%, #6c918a 100%);
+  color: white !important;
+}
+
 .register-now:hover,
 .sidebar-register-now:hover,
 .habit-register-now:hover,
-.scholarship-register-now:hover {
+.scholarship-register-now:hover,
+.ty-form-button:hover {
   background: linear-gradient(92deg, #84aba3 -6.15%, #567872 114.84%);
 }
 
@@ -564,7 +577,8 @@ header > section > nav > ul > li:hover,
 .sidebar-register-text,
 .habit-register-text,
 .pay-now-text,
-.scholarship-register-now-text {
+.scholarship-register-now-text,
+.ty-form-button-text {
   display: inline-block;
   transition: transform 0.3s ease-in-out;
 }
@@ -573,7 +587,8 @@ header > section > nav > ul > li:hover,
 .sidebar-register-now .sidebar-register-text,
 .habit-register-now .habit-register-text,
 .pay-now .pay-now-text,
-.scholarship-register-now .scholarship-register-now-text {
+.scholarship-register-now .scholarship-register-now-text,
+.ty-form-button .ty-form-button-text {
   transform: translateX(8px);
 }
 
@@ -581,7 +596,8 @@ header > section > nav > ul > li:hover,
 .sidebar-register-now:hover .sidebar-register-text,
 .habit-register-now:hover .habit-register-text,
 .pay-now:hover .pay-now-text,
-.scholarship-register-now:hover .scholarship-register-now-text {
+.scholarship-register-now:hover .scholarship-register-now-text,
+.ty-form-button:hover .ty-form-button-text {
   transform: translateX(-8px);
 }
 
@@ -589,7 +605,8 @@ header > section > nav > ul > li:hover,
 .sidebar-register-now > img,
 .habit-register-now > img,
 .pay-now > svg,
-.scholarship-register-now > img {
+.scholarship-register-now > img,
+.ty-form-button > img {
   opacity: 0;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -598,7 +615,8 @@ header > section > nav > ul > li:hover,
 .sidebar-register-now:hover > img,
 .habit-register-now:hover > img,
 .pay-now:hover > svg,
-.scholarship-register-now:hover > img {
+.scholarship-register-now:hover > img,
+.ty-form-button:hover > img {
   opacity: 1;
 }
 
@@ -2349,6 +2367,11 @@ picture:hover img {
   margin-top: 5px;
   position: relative;
 }
+.ty-back-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 .ty-form-group input {
   padding-left: 12px;
   padding-right: 32px;
@@ -2472,6 +2495,7 @@ picture:hover img {
   width: 100%;
   margin-left: 20px;
   color: #4a4a4a;
+  position: relative;
 }
 
 .session-counter-home h3 {

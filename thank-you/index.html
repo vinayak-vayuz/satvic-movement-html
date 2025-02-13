@@ -163,7 +163,8 @@
                   <div class="ty-form-group">
                     <input
                       type="tel"
-                      id="phoneNumber"
+                      id="phone"
+                      name="phone"
                       value="+91 8269989915"
                       disabled
                     />
@@ -187,10 +188,36 @@
                     placeholder="Enter new email"
                   />
                 </div>
-                <button class="ty-button" onclick="updateEmail()">
-                  Update Email
+                <button class="ty-form-button" onclick="updateEmail()">
+                  <div class="ty-form-button-text">Update Email</div>
+                  <img
+                    style="width: 14px"
+                    width="14"
+                    height="0"
+                    src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/home/arrow.svg"
+                  />
                 </button>
-                <button class="ty-back-button" onclick="goBack()">⬅️</button>
+                <button class="ty-back-button" onclick="goBack()">
+                  <svg
+                    width="27"
+                    height="27"
+                    viewBox="0 0 27 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="13.5"
+                      cy="13.5"
+                      r="12.75"
+                      stroke="#AA7D68"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M19.8633 14.2502C20.2775 14.2502 20.6133 13.9144 20.6133 13.5002C20.6133 13.086 20.2775 12.7502 19.8633 12.7502V14.2502ZM6.60503 12.9699C6.31214 13.2627 6.31214 13.7376 6.60503 14.0305L11.378 18.8035C11.6709 19.0964 12.1458 19.0964 12.4387 18.8035C12.7316 18.5106 12.7316 18.0357 12.4387 17.7428L8.19602 13.5002L12.4387 9.25754C12.7316 8.96465 12.7316 8.48978 12.4387 8.19688C12.1458 7.90399 11.6709 7.90399 11.378 8.19688L6.60503 12.9699ZM19.8633 12.7502L7.13536 12.7502V14.2502L19.8633 14.2502V12.7502Z"
+                      fill="#AA7D68"
+                    />
+                  </svg>
+                </button>
               </div>
 
               <!-- Step 3: Verify Email -->
@@ -202,10 +229,37 @@
                 <div class="ty-form-group">
                   <input type="text" id="otp" placeholder="Enter OTP" />
                 </div>
-                <button class="ty-button" onclick="verifyOtp()">
-                  Verify Account
+                <button class="ty-form-button" onclick="verifyOtp()">
+                  <div class="ty-form-button-text">Verify Account</div>
+                  <img
+                    style="width: 14px"
+                    width="14"
+                    height="0"
+                    src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/home/arrow.svg"
+                  />
                 </button>
-                <button class="ty-back-button" onclick="goBack()">⬅️</button>
+                <button class="ty-back-button" onclick="goBack()">
+                  ⬅
+                  <svg
+                    width="27"
+                    height="27"
+                    viewBox="0 0 27 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="13.5"
+                      cy="13.5"
+                      r="12.75"
+                      stroke="#AA7D68"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M19.8633 14.2502C20.2775 14.2502 20.6133 13.9144 20.6133 13.5002C20.6133 13.086 20.2775 12.7502 19.8633 12.7502V14.2502ZM6.60503 12.9699C6.31214 13.2627 6.31214 13.7376 6.60503 14.0305L11.378 18.8035C11.6709 19.0964 12.1458 19.0964 12.4387 18.8035C12.7316 18.5106 12.7316 18.0357 12.4387 17.7428L8.19602 13.5002L12.4387 9.25754C12.7316 8.96465 12.7316 8.48978 12.4387 8.19688C12.1458 7.90399 11.6709 7.90399 11.378 8.19688L6.60503 12.9699ZM19.8633 12.7502L7.13536 12.7502V14.2502L19.8633 14.2502V12.7502Z"
+                      fill="#AA7D68"
+                    />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
@@ -322,37 +376,38 @@
   <!-- Form -->
   <script>
     function goToEdit() {
-        document.getElementById("step1").style.display = "none";
-        document.getElementById("step2").style.display = "block";
+      document.getElementById("step1").style.display = "none";
+      document.getElementById("step2").style.display = "block";
     }
 
     function updateEmail() {
-        let newEmail = document.getElementById("newEmail").value;
-        if (newEmail) {
-            document.getElementById("displayEmail").textContent = newEmail;
-            document.getElementById("step2").style.display = "none";
-            document.getElementById("step3").style.display = "block";
-        } else {
-            alert("Please enter a valid email.");
-        }
+      let newEmail = document.getElementById("newEmail").value;
+      if (newEmail) {
+        document.getElementById("displayEmail").textContent = newEmail;
+        document.getElementById("step2").style.display = "none";
+        document.getElementById("step3").style.display = "block";
+      } else {
+        alert("Please enter a valid email.");
+      }
     }
 
     function verifyOtp() {
-        let otp = document.getElementById("otp").value;
-        if (otp.length === 4) {
-            document.getElementById("currentEmail").value = document.getElementById("displayEmail").textContent;
-            goBack();
-        } else {
-            alert("Enter a valid 4-digit OTP.");
-        }
+      let otp = document.getElementById("otp").value;
+      if (otp.length === 4) {
+        document.getElementById("currentEmail").value =
+          document.getElementById("displayEmail").textContent;
+        goBack();
+      } else {
+        alert("Enter a valid 4-digit OTP.");
+      }
     }
 
     function goBack() {
-        document.getElementById("step1").style.display = "block";
-        document.getElementById("step2").style.display = "none";
-        document.getElementById("step3").style.display = "none";
+      document.getElementById("step1").style.display = "block";
+      document.getElementById("step2").style.display = "none";
+      document.getElementById("step3").style.display = "none";
     }
-</script>
+  </script>
 </html>
 
 <!-- <div>

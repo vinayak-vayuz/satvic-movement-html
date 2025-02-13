@@ -106,6 +106,10 @@ a {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Hide default checkbox */
 .custom-checkbox {
   appearance: none;

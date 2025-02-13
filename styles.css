@@ -2,33 +2,33 @@
   font-family: "GreycliffCF-thin";
   src: url("../fonts/GreycliffCF-Thin.woff") format("woff");
   font-weight: 300;
-  font-style: normal;
+ 
 }
 
 @font-face {
   font-family: "GreycliffCF";
   src: url("/fonts/GreycliffCF-Regular.woff") format("woff");
   font-weight: 400;
-  font-style: normal;
+ 
 }
 
 @font-face {
   font-family: "GreycliffCF-medium";
   src: url("/fonts/greycliffcf-medium.woff") format("woff");
   font-weight: 500;
-  font-style: normal;
+ 
 }
 @font-face {
   font-family: "GreycliffCF-semibold";
   src: url("/fonts/greycliffcf-demibold.woff") format("woff");
   font-weight: 600;
-  font-style: normal;
+ 
 }
 @font-face {
   font-family: "GreycliffCF";
   src: url("/fonts/GreycliffCF-Bold.woff") format("woff");
   font-weight: 500;
-  font-style: normal;
+ 
 } */
 
 :root {
@@ -39,7 +39,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 
 /* Reset basic elements */
 *,
@@ -363,7 +362,9 @@ header > section > nav > ul > li {
   transition: color 0.3s ease-in-out;
 }
 
-header > section > nav > ul > li:hover, .privacy-policy:hover, .tandc:hover {
+header > section > nav > ul > li:hover,
+.privacy-policy:hover,
+.tandc:hover {
   color: #dbaf64;
   transition: color 0.3s ease-in-out;
 }
@@ -403,34 +404,33 @@ header > section > nav > ul > li:hover, .privacy-policy:hover, .tandc:hover {
 
 .hero-section-ty {
   min-height: 206px;
+  padding-top: 20px;
   background-image: url("./images/thank-you/hero-bg.webp");
-  background-position: bottom center;
+  background-position: top center;
+  background-repeat: no-repeat;
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 .hero-section-ty > main > h3 {
   color: #49887b;
   text-align: center;
   font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 40px; /* 166.667% */
 }
 .hero-section-ty > main > p {
+  margin-top: 10px;
   color: #666;
   text-align: center;
-  font-family: "Greycliff CF";
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px; /* 137.5% */
+  font-weight: 500;
+  line-height: 22px;
 }
 .hero-section-ty > main > div > div > span {
   color: #49887b;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 21px; /* 150% */
 }
 .hero-clip-path {
@@ -450,7 +450,7 @@ header > section > nav > ul > li:hover, .privacy-policy:hover, .tandc:hover {
   color: #49887b;
   font-family: "Greycliff CF";
   font-size: 22px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 40px;
 }
@@ -460,7 +460,7 @@ header > section > nav > ul > li:hover, .privacy-policy:hover, .tandc:hover {
   color: #49887b;
   font-family: "Greycliff CF";
   font-size: 42px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: 43px;
 }
@@ -471,7 +471,7 @@ header > section > nav > ul > li:hover, .privacy-policy:hover, .tandc:hover {
   text-align: center;
   font-family: "Greycliff CF";
   font-size: 18px;
-  font-style: normal;
+
   font-weight: 500;
   line-height: 24px;
 }
@@ -526,7 +526,7 @@ header > section > nav > ul > li:hover, .privacy-policy:hover, .tandc:hover {
   height: 46px;
   width: 100%;
   /* padding: 9px 56px; */
-  background: #FFC76A;
+  background: #ffc76a;
   color: #418b78;
   font-size: 18px;
   font-weight: bold;
@@ -821,7 +821,7 @@ header > section > nav > ul > li:hover, .privacy-policy:hover, .tandc:hover {
   font-weight: 500;
 }
 
-.workshop-include-section-image-parent{
+.workshop-include-section-image-parent {
   max-width: 165px;
 }
 
@@ -1736,7 +1736,7 @@ picture:hover img {
   color: #49887b;
   text-align: center;
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: normal;
 }
@@ -2090,7 +2090,7 @@ picture:hover img {
   margin-top: 3px;
   color: #ffefa8;
   font-size: 12px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: normal;
 }
@@ -2131,7 +2131,7 @@ picture:hover img {
   color: #fff;
   text-align: center;
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: 21px;
 }
@@ -2189,7 +2189,7 @@ picture:hover img {
   color: #fff;
   font-family: "Greycliff CF";
   font-size: 16px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: 22px;
 }
@@ -2279,7 +2279,7 @@ picture:hover img {
   color: #4a4a4a;
   font-family: "Greycliff CF";
   font-size: 18px;
-  font-style: normal;
+
   font-weight: 600;
   line-height: 165%; /* 29.7px */
 }
@@ -2287,7 +2287,7 @@ picture:hover img {
   color: #666;
   font-family: "Greycliff CF";
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: normal;
 }
@@ -2295,7 +2295,7 @@ picture:hover img {
   color: #666;
   font-family: "Greycliff CF";
   font-size: 14px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: 20px; /* 142.857% */
 }
@@ -2303,7 +2303,7 @@ picture:hover img {
   color: #797979;
   font-family: "Greycliff CF";
   font-size: 11px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: 21px; /* 190.909% */
 }
@@ -2311,7 +2311,7 @@ picture:hover img {
   opacity: 0.8;
   color: #49887b;
   font-size: 11px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: 21px;
   text-decoration-line: underline;
@@ -2421,7 +2421,7 @@ picture:hover img {
   margin-bottom: 20px;
   color: #4a4a4a;
   font-size: 32px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: 35px; /* 109.375% */
 }
@@ -2469,7 +2469,7 @@ picture:hover img {
   text-align: center;
   font-family: "Greycliff CF";
   font-size: 30.638px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: normal;
 }
@@ -2479,7 +2479,7 @@ picture:hover img {
   text-align: center;
   font-family: "Greycliff CF";
   font-size: 18.323px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: normal;
 }
@@ -2525,7 +2525,7 @@ picture:hover img {
   text-align: center;
   font-family: "Greycliff CF";
   font-size: 20.872px;
-  font-style: normal;
+
   font-weight: 700;
   line-height: normal;
 }
@@ -2535,7 +2535,7 @@ picture:hover img {
   text-align: center;
   font-family: "Greycliff CF";
   font-size: 12.523px;
-  font-style: normal;
+
   font-weight: 400;
   line-height: normal;
 }

@@ -2277,15 +2277,13 @@ picture:hover img {
 
 .ty-card h3 {
   color: #4a4a4a;
-  font-family: "Greycliff CF";
   font-size: 18px;
-
   font-weight: 600;
-  line-height: 165%; /* 29.7px */
+  line-height: 165%;
 }
 .ty-card label {
   color: #666;
-  font-family: "Greycliff CF";
+
   font-size: 14px;
 
   font-weight: 400;
@@ -2322,6 +2320,7 @@ picture:hover img {
 }
 
 .ty-form-group {
+  margin-top: 5px;
   position: relative;
 }
 .ty-form-group input {
@@ -2371,30 +2370,61 @@ picture:hover img {
 }
 
 .step .line {
-  top: 20px;
-  left: 9px;
+  top: 28px;
+  left: 14px;
   /*   height: 120px; */
   height: 100%;
-
   position: absolute;
-  border-left: 2px dashed gray;
+  border-left: 1px dashed #818184;
 }
 
 .step.completed .circle {
+  width: 28px;
+  height: 28px;
+  visibility: visible;
+  /* background-color: #88aea6; */
+  border-width: 1px;
+  border-color: #e4e4e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step.completed .circle .dot {
+  width: 8.24px;
+  height: 8.24px;
   visibility: visible;
   background-color: #88aea6;
-  border-color: #88aea6;
+  border-radius: 50%;
+  /* border-color: #88aea6; */
 }
 
 .step.completed .line {
-  border-left: 2px dashed #88aea6;
+  border-left: 1px dashed #818184;
 }
 
 .step.active .circle {
+  width: 28px;
+  height: 28px;
   visibility: visible;
-  border-color: #88aea6;
+  border-width: 1px;
+  border-color: #e4e4e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.step.active .circle .number {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #88aea6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
 .step.empty .circle {
   visibility: hidden;
 }
@@ -2415,6 +2445,7 @@ picture:hover img {
 .step-content {
   width: 100%;
   margin-left: 20px;
+  color: #4A4A4A;
 }
 
 .session-counter-home h3 {

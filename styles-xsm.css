@@ -7,13 +7,16 @@
   .hero-section {
     background-image: url(https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/hero-bg-sm.webp);
   }
+  .workshop-details {
+    background-color: rgb(230, 243, 239);
+  }
   .video-section {
     position: relative;
     width: calc(100vw - 40px);
     height: 231px;
     border-radius: 13px;
     overflow: hidden;
-    margin: 0 10px;
+    /* margin: 0 10px; */
   }
   .hero-section-ty {
     background-image: url("./images/thank-you/hero-bg-sm.png");

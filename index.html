@@ -2419,7 +2419,7 @@
                   style="color: transparent"
                   src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/clock-sm.svg" />
               </div>
-              <span>Multiple time slots available</span>
+              <span id="sidebar-time-slot-container">Multiple time slots available</span>
             </li>
             <li class="sidebar-li">
               <div class="sidebar-inner-icon-container">
@@ -2652,13 +2652,24 @@
 </script>
 <!-- Function to get session details based on sessionType -->
 <script>
+  const wsIconboxes = document.querySelectorAll(".ws-iconbox");
+  const sidebar = document.querySelector(".sidebar");
   function getSessionDetails(sessionType) {
     if (sessionType === "multi") {
+      wsIconboxes.forEach(wsIconbox => {
+        wsIconbox.style.height = "194px"; 
+      });
       return `
         <h4>Choose Time Slot (IST)</h4>
-        <p>Morning: 8-9 AM</p>
-        <p>Afternoon: 12-1 PM</p>
-        <p>Evening: 6-7 PM</p>
+        <p><svg style="margin-right: 6px;" xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
+  <path d="M14.9999 11.1289C14.9999 8.91977 13.2091 7.12891 10.9999 7.12891C8.79078 7.12891 6.99992 8.91977 6.99992 11.1289M10.9999 1.12891V3.12891M18.071 4.05784L16.6568 5.47205M20.9999 11.1289H18.9999M3 11.129H1M5.34303 5.47213L3.92882 4.05791" stroke="#49887B" stroke-width="1.5" stroke-linecap="round"/>
+</svg> Morning: 8-9 AM</p>
+        <p><svg style="margin-right: 6px;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+  <path d="M9.99997 1V2.8M16.364 3.63604L15.0912 4.90883M19 9.99998H17.2M16.364 16.364L15.0912 15.0912M9.99997 17.2V19M4.90878 15.0912L3.63598 16.364M2.80001 10.0001H1M4.90874 4.9089L3.63595 3.63611M13.6 10C13.6 11.9882 11.9882 13.6 9.99997 13.6C8.01174 13.6 6.39995 11.9882 6.39995 10C6.39995 8.01177 8.01174 6.4 9.99997 6.4C11.9882 6.4 13.6 8.01177 13.6 10Z" stroke="#49887B" stroke-width="1.5" stroke-linecap="round"/>
+</svg>Afternoon: 12-1 PM</p>
+        <p><svg style="margin-right: 6px;" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+  <path d="M1.52428 10.1858C1.79428 14.0483 5.07178 17.1908 8.99428 17.3633C11.7618 17.4833 14.2368 16.1933 15.7218 14.1608C16.3368 13.3283 16.0068 12.7733 14.9793 12.9608C14.4768 13.0508 13.9593 13.0883 13.4193 13.0658C9.75178 12.9158 6.75178 9.84832 6.73678 6.22582C6.72928 5.25082 6.93178 4.32832 7.29928 3.48832C7.70428 2.55832 7.21678 2.11582 6.27928 2.51332C3.30928 3.76582 1.27678 6.75832 1.52428 10.1858Z" stroke="#49887B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>Evening: 6-7 PM</p>
       `;
     } else {
       return `
@@ -2669,6 +2680,19 @@
     }
   }
 
+  function getSessionDetailsSidebar(sessionType) {
+    if (sessionType === "multi") {
+      sidebar.style.maxHeight = "409px";
+      return`
+        <p>Morning: 8-9 AM</p>
+        <p style="padding-top: 6px;">Afternoon: 12-1 PM</p>
+        <p style="padding-top: 6px;">Evening: 6-7 PM</p>
+      `
+    } else {
+      return`Multiple time slots available`
+    }
+  }
+
   // Function to get query parameter value from the URL
   function getQueryParameter(name) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -2676,13 +2700,15 @@
   }
 
   // Get the session from the URL query parameter
-  const sessionType = getQueryParameter("session") || "single"; // Default to "multi" if not provided
+  const sessionType = getQueryParameter("session") || "single";
 
   // Get the session container where the content will be inserted
   const sessionContainer = document.getElementById("ws-time-slot-container");
+  const sessionContainerSidebar = document.getElementById("sidebar-time-slot-container")
 
   // Render the session details based on sessionType
   sessionContainer.innerHTML = getSessionDetails(sessionType);
+  sessionContainerSidebar.innerHTML = getSessionDetailsSidebar(sessionType);
 </script>
 
 <!-- Workshop iconbox flip -->

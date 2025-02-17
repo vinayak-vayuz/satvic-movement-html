@@ -402,8 +402,12 @@ header > section > nav > ul > li:hover,
   background-image: url("./images/hero-bg.webp");
   background-position: top center;
   padding-top: 56px;
-  padding-bottom: 12rem;
+  padding-bottom: 13rem;
   background-repeat: no-repeat;
+}
+
+.text-section{
+  margin-top: -2rem;
 }
 
 .hero-section-ty {
@@ -1183,6 +1187,10 @@ picture:hover img {
   border-radius: 10px;
   transition: all 0.3s ease-in;
   margin-bottom: 20px;
+}
+
+.testimonial-heading-mobile{
+  display: none;
 }
 
 .whats-say-heading {
@@ -2157,6 +2165,7 @@ picture:hover img {
   height: 42px;
   padding: 5px 15px;
   padding-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .form-select option {

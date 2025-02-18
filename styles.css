@@ -406,6 +406,10 @@ header > section > nav > ul > li:hover,
   background-repeat: no-repeat;
 }
 
+.uhc-mobile{
+  display: none;
+}
+
 .text-section{
   margin-top: -2rem;
 }

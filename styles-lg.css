@@ -6,6 +6,42 @@
   header > section > nav {
     display: none;
   }
+
+  .uhc-mobile{
+    display: block;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #F2E3C4;
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 24px;
+  }
+
+  .uhc-mobile-text h5{
+    color: #B98C43;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .uhc-mobile-text p{
+    padding-top: 4px;
+    color: #CE9F50;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .uhc-mobile-button{
+    width: 100%;
+    max-width: 100px;
+    font-weight: 700;
+    font-size: 13px;
+    background-color: #B98C43;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .last-day-register {
     position: relative;
     transition: all 0.3s ease-in-out;

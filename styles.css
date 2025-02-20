@@ -896,6 +896,7 @@ header > section > nav > ul > li:hover,
 
 .benefits-sections > p {
   margin-top: 17px;
+  margin-bottom: 4px;
 }
 
 .benefit-img {

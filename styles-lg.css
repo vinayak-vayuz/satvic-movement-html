@@ -7,34 +7,34 @@
     display: none;
   }
 
-  .uhc-mobile{
+  .uhc-mobile {
     display: block;
     width: 100%;
     position: fixed;
     bottom: 0;
-    background-color: #F2E3C4;
+    background-color: #f2e3c4;
     display: flex;
     justify-content: space-between;
     padding: 11px 24px;
   }
 
-  .uhc-mobile-text h5{
-    color: #B98C43;
+  .uhc-mobile-text h5 {
+    color: #b98c43;
     font-weight: 500;
     font-size: 17px;
   }
-  .uhc-mobile-text p{
+  .uhc-mobile-text p {
     padding-top: 4px;
-    color: #CE9F50;
+    color: #ce9f50;
     font-weight: 400;
     font-size: 14px;
   }
-  .uhc-mobile-button{
+  .uhc-mobile-button {
     width: 100%;
     max-width: 100px;
     font-weight: 700;
     font-size: 13px;
-    background-color: #B98C43;
+    background-color: #b98c43;
     color: white;
     border-radius: 50px;
     display: flex;
@@ -134,6 +134,7 @@
   }
   .text-section {
     text-align: center;
+    padding-top: 36px;
   }
   .hero-content > .text-section > div > h4 {
     margin-top: 0px;
@@ -153,6 +154,15 @@
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
+  }
+  .whats-include-heading,
+  .whats-say-heading,
+  .who-is-heading,
+  .workshop-not-for,
+  .faq-heading,
+  .about-the-host,
+  .register-now-heading {
+    font-size: 28px;
   }
   .register-now-div {
     margin: 36px auto;
@@ -215,7 +225,8 @@
   .flip-card-inner {
     transform: rotateY(0deg);
   }
-  .session-counter-hero, .hr-hero {
+  .session-counter-hero,
+  .hr-hero {
     display: none;
   }
   .session-counter-home h3 {

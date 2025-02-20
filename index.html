@@ -108,22 +108,15 @@
 
       </div>
       <div class="video-section">
-        <video id="video"
-          poster="https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/hero-video-thumbnail.webp"
-          loop playsinline style="
-              width: 100%;
-              /* height: 100%; */
-              object-fit: cover;
-              z-index: 0;
-              border-radius: 12px;
-            ">
-          <source
-            src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/videos/join-the-ultimate-health-challenge-starting-3rd-march-multiple-time-slots-online-workshop.mp4"
-            type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <iframe id="hero-video" 
+        src="https://www.youtube.com/embed/1zqFp1bY4p8?si=RuwYpJZGfBeBSord" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+</iframe>
         <!-- Play Button -->
-        <button id="playButton" style="
+        <!-- <button id="playButton" style="
               position: absolute;
               top: 50%;
               left: 50%;
@@ -135,9 +128,9 @@
               d="M58.6602 45.6852C60.6591 44.5303 60.6591 41.6448 58.6602 40.4899L37.5163 28.274C35.5163 27.1185 33.0156 28.5619 33.0156 30.8717V55.3034C33.0156 57.6132 35.5163 59.0566 37.5163 57.901L58.6602 45.6852Z"
               fill="#EC4646" />
           </svg>
-        </button>
+        </button> -->
         <!-- Pause Button -->
-        <button id="pauseButton" style="
+        <!-- <button id="pauseButton" style="
               position: absolute;
               top: 50%;
               left: 50%;
@@ -151,8 +144,9 @@
               d="M58.6602 45.6852C60.6591 44.5303 60.6591 41.6448 58.6602 40.4899L37.5163 28.274C35.5163 27.1185 33.0156 28.5619 33.0156 30.8717V55.3034C33.0156 57.6132 35.5163 59.0566 37.5163 57.901L58.6602 45.6852Z"
               fill="#EC4646" />
           </svg>
-        </button>
+        </button> -->
       </div>
+      
     </main>
   </section>
   <!-- Workshop IconBox -->

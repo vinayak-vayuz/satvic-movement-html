@@ -20,7 +20,7 @@
 
   .uhc-mobile-text h5 {
     color: #b98c43;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 17px;
   }
   .uhc-mobile-text p {
@@ -298,5 +298,8 @@
   }
   .register-form-bottom {
     margin-top: 34px;
+  }
+  .footer-bottom {
+    margin-bottom: 80px;
   }
 }

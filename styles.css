@@ -2493,6 +2493,7 @@ picture:hover img {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: white;
   font-size: 14px;
   font-weight: 700;

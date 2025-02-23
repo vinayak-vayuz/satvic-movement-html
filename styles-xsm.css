@@ -1,8 +1,8 @@
 @media screen and (max-width: 390px) {
   .contact-us {
-    max-width: 122px;
-    max-height: 30px;
-    font-size: 12px;
+    max-width: 150px;
+    max-height: 40px;
+    font-size: 16px;
   }
   .hero-section {
     background-image: url(https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/hero-bg-sm.webp);
@@ -27,6 +27,9 @@
   }
   .grid-responsive {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .benefits-subheading{
+    margin-top: 0px;
   }
   .testimonial-div {
     padding-top: 0px !important;

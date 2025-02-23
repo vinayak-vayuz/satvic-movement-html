@@ -12,6 +12,24 @@
     max-width: 122.609px;
     height: 30px;
   }
+  .workshop-include-main{
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 9rem;
+  }
+  .workshop-include-section{
+    position: relative;
+  }
+
+  .workshop-include-section > div{
+    padding-top: 58px;
+  }
+  .workshop-include-section-image-parent{
+    max-width: 246px;
+    position: absolute;
+    top: -8rem;
+  }
   .grid-responsive {
     grid-template-columns: repeat(1, 1fr);
   }

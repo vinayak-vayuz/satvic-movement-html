@@ -16,6 +16,7 @@
     display: flex;
     justify-content: space-between;
     padding: 11px 24px;
+    border-radius: 12px 12px 0px 0px;
   }
 
   .uhc-mobile-text h5 {
@@ -26,7 +27,7 @@
   .uhc-mobile-text p {
     padding-top: 4px;
     color: #ce9f50;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
   }
   .uhc-mobile-button {
@@ -192,11 +193,11 @@
     width: 100%;
   }
   .workshop-for-not-all {
-    padding: 17px 14px;
+    padding: 17px 12px;
   }
   .workshop-for-not-all-inner {
     display: grid;
-    gap: 20px;
+    gap: 8px;
     grid-template-columns: repeat(2, 1fr);
   }
   .not-for-items {
@@ -267,6 +268,7 @@
   .modal-content > h2 {
     font-size: 18px;
     font-weight: 500;
+    color: #4A4A4A;
   }
   #scholarshipForm {
     gap: 10px;
@@ -288,13 +290,14 @@
     font-size: 14px;
   }
   .terms label {
-    font-size: 13px;
+    font-size: 12px;
   }
   .form-input-container {
     gap: 10px;
   }
   .register-box {
     max-height: 100%;
+    padding: 28px;
   }
   .register-form-bottom {
     margin-top: 34px;

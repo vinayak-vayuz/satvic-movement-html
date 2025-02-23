@@ -811,7 +811,8 @@ header > section > nav > ul > li:hover,
 }
 
 .divider {
-  border-top: 1px solid #c8c8c8;
+  background-color: #c8c8c8;
+  /* border-top: 1px solid #c8c8c8; */
 }
 
 .whats-include-heading {
@@ -1403,7 +1404,7 @@ picture:hover img {
 
 .scholarship-card-content > button {
   margin-top: 15px;
-  font-weight: bold;
+  font-weight: 500;
   color: #49887b;
   text-decoration: underline;
 }
@@ -1559,6 +1560,7 @@ picture:hover img {
   margin-top: 10px;
 }
 .scholarship-terms {
+  font-size: 13px;
   color: #666;
 }
 
@@ -1656,7 +1658,7 @@ picture:hover img {
 .not-for-items {
   width: 100%;
   max-width: 154px;
-  padding: 16px 5px;
+  padding: 16px 1px;
   background-color: #f4f2eb;
   border-radius: 12px;
   display: flex;

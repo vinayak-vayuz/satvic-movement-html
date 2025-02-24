@@ -108,13 +108,10 @@
 
       </div>
       <div class="video-section">
-        <iframe id="hero-video" 
-        src="https://www.youtube.com/embed/1zqFp1bY4p8?si=RuwYpJZGfBeBSord" 
-        frameborder="0" 
-        allow="autoplay; encrypted-media" 
-        allowfullscreen 
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
-</iframe>
+        <iframe id="hero-video" src="https://www.youtube.com/embed/1zqFp1bY4p8?si=RuwYpJZGfBeBSord" frameborder="0"
+          allow="autoplay; encrypted-media" allowfullscreen
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+        </iframe>
         <!-- Play Button -->
         <!-- <button id="playButton" style="
               position: absolute;
@@ -146,11 +143,11 @@
           </svg>
         </button> -->
       </div>
-      
+
     </main>
   </section>
   <!-- Workshop IconBox -->
-  <section class="workshop-details mb-40">
+  <section class="workshop-details">
     <div class="main-area container-class">
       <div class="workshop-iconbox">
         <!-- Start Date -->
@@ -159,8 +156,15 @@
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <div class="image-box">
-                  <img width="36" height="36" decoding="async" data-nimg="1" class="icon-list"
-                    src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/calendar.svg" />
+                  <picture class="ws-iconbox-picture">
+                    <!-- Mobile image -->
+                    <source srcset="
+                    https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/calendar-sm-2.svg" media="(max-width: 1024px)" />
+                    <!-- Desktop image -->
+                    <img
+                      src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/calendar.svg"
+                      alt="calendar" />
+                  </picture>
                 </div>
                 <div class="ws-iconbox-text">
                   <h4>Start Date</h4>
@@ -180,8 +184,18 @@
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <div class="image-box">
-                  <img width="36" height="36" decoding="async" data-nimg="1" class="icon-list"
-                    src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/sand-timer.svg" />
+                  <picture class="ws-iconbox-picture">
+                    <!-- Mobile image -->
+                    <source srcset="
+                    https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/sand-timer-sm.svg
+                        " media="(max-width: 1024px)" />
+                    <!-- Desktop image -->
+                    <img
+                      src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/sand-timer.svg"
+                      alt="Sand Timer" />
+                  </picture>
+                  <!-- <img width="36" height="36" decoding="async" data-nimg="1" class="icon-list"
+                    src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/sand-timer.svg" /> -->
                 </div>
                 <div class="ws-iconbox-text">
                   <h4>Duration</h4>
@@ -201,8 +215,18 @@
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <div class="image-box">
-                  <img width="36" height="36" decoding="async" data-nimg="1" class="icon-list"
-                    src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/clock.svg" />
+                  <picture class="ws-iconbox-picture">
+                    <!-- Mobile image -->
+                    <source srcset="
+                    https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/clock-sm-2.svg
+                        " media="(max-width: 1024px)" />
+                    <!-- Desktop image -->
+                    <img
+                      src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/clock.svg"
+                      alt="Sand Timer" />
+                  </picture>
+                  <!-- <img width="36" height="36" decoding="async" data-nimg="1" class="icon-list"
+                    src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/clock.svg" /> -->
                 </div>
                 <div class="ws-iconbox-text" id="ws-time-slot-container">
                   <!-- <h4>Choose Time Slot (IST)</h4>
@@ -225,8 +249,18 @@
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <div class="image-box">
-                  <img width="36" height="36" decoding="async" data-nimg="1" class="icon-list"
-                    src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/world.svg" />
+                  <picture class="ws-iconbox-picture">
+                    <!-- Mobile image -->
+                    <source srcset="
+                    https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/world-sm.svg
+                        " media="(max-width: 1024px)" />
+                    <!-- Desktop image -->
+                    <img
+                      src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/world.svg"
+                      alt="World" />
+                  </picture>
+                  <!-- <img width="36" height="36" decoding="async" data-nimg="1" class="icon-list"
+                    src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/world.svg" /> -->
                 </div>
                 <div class="ws-iconbox-text">
                   <h4>Language</h4>
@@ -248,8 +282,18 @@
             <div class="flip-card-inner">
               <div class="flip-card-front">
                 <div class="image-box">
-                  <img width="36" height="36" decoding="async" data-nimg="1" class="icon-list"
-                    src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/rupee.svg" />
+                  <picture class="ws-iconbox-picture">
+                    <!-- Mobile image -->
+                    <source srcset="
+                    https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/rupee-sm-2.svg
+                        " media="(max-width: 1024px)" />
+                    <!-- Desktop image -->
+                    <img
+                      src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/rupee.svg"
+                      alt="Rupee" />
+                  </picture>
+                  <!-- <img width="36" height="36" decoding="async" data-nimg="1" class="icon-list"
+                    src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/rupee.svg" /> -->
                 </div>
                 <div class="ws-iconbox-text">
                   <h4>Contribution</h4>
@@ -270,7 +314,7 @@
   </section>
 
   <!-- Workshop Details section with side bar -->
-  <section>
+  <section class="scroll-section">
     <div class="container-class main-content">
       <div class="first-col content">
         <!-- Challenge starting in -->
@@ -342,7 +386,7 @@
                     src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/holistic-health-knowledge.svg" />
                 </div>
                 <div>
-                  <h5>Holistic Health<br/> Knowledge</h5>
+                  <h5>Holistic Health<br /> Knowledge</h5>
                   <p>
                     This is a course designed to transform every aspect of
                     your health - physical body, food, sleep, movement,
@@ -358,7 +402,7 @@
                     src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/learn-by-doing-not-just-theory.svg" />
                 </div>
                 <div>
-                  <h5>Learn by Doing,<br/>not Just Theory</h5>
+                  <h5>Learn by Doing,<br />not Just Theory</h5>
                   <p>
                     You may have seen hundreds of health videos before, but
                     struggled to apply them. This course is different. Here,
@@ -374,7 +418,7 @@
                     src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/community-of-thousands-of-people.svg" />
                 </div>
                 <div>
-                  <h5>Community of Thousands<br/> of People</h5>
+                  <h5>Community of Thousands<br /> of People</h5>
                   <p>
                     You will have a beautiful community of like minded people
                     from all across the world taking the challenge with you,
@@ -2034,7 +2078,7 @@
               </div>
               <div>
                 <p class="not-for-items-text text-center">
-                  Pregnant or <br/> breastfeeding mothers
+                  Pregnant or <br /> breastfeeding mothers
                 </p>
               </div>
             </div>
@@ -2056,7 +2100,7 @@
               </div>
               <div>
                 <p class="not-for-items-text text-center">
-                  Elderly citizens<br/> above age 60
+                  Elderly citizens<br /> above age 60
                 </p>
               </div>
             </div>
@@ -2078,7 +2122,7 @@
               </div>
               <div>
                 <p class="not-for-items-text text-center">
-                  Children<br/> below age 14
+                  Children<br /> below age 14
                 </p>
               </div>
             </div>
@@ -2250,13 +2294,18 @@
 
                 <div class="description host-details-inner">
                   <p class="host-detail-text">
-                    Subah is an <strong>acclaimed health educator,</strong> published author and co-founder of the health education platform 'Satvic Movement'. Subah's journey into health began after she healed her own chronic diseases by following <strong>natural healing principles.</strong>
+                    Subah is an <strong>acclaimed health educator,</strong> published author and co-founder of the
+                    health education platform 'Satvic Movement'. Subah's journey into health began after she healed her
+                    own chronic diseases by following <strong>natural healing principles.</strong>
                   </p>
                   <p class="host-detail-text">
-                    At the young age of 17, she decided to devote her life to the purpose of <strong>uplifting people's health,</strong> and trained to become a holistic health educator. She learnt the science of 'nature cure' under the guidance of multiple Indian masters.
+                    At the young age of 17, she decided to devote her life to the purpose of <strong>uplifting people's
+                      health,</strong> and trained to become a holistic health educator. She learnt the science of
+                    'nature cure' under the guidance of multiple Indian masters.
                   </p>
                   <p class="host-detail-text">
-                    Subah's goal is to share this intricate ancient knowledge, adjusted to contemporary lifestyles, with as many people as possible, using all the tools that current day technology has to offer.
+                    Subah's goal is to share this intricate ancient knowledge, adjusted to contemporary lifestyles, with
+                    as many people as possible, using all the tools that current day technology has to offer.
                   </p>
                 </div>
                 <button class="read-more-text button">
@@ -2278,10 +2327,16 @@
 
                 <div class="description host-details-inner">
                   <p class="host-detail-text">
-                    Himadri, is a young and dynamic Satvic health educator from Jaipur and has been a part of the <strong>Satvic Team for more than 4 years.</strong> She trained intensively to be an educator and she currently leads the 4-hour. Health Transformation Workshops, 3-Day Juice Fast and now co-hosts the Ultimate Health Challenge along with Subah. Till date, Himadri has <strong>hosted more workshops for over 6000 people.</strong>
+                    Himadri, is a young and dynamic Satvic health educator from Jaipur and has been a part of the
+                    <strong>Satvic Team for more than 4 years.</strong> She trained intensively to be an educator and
+                    she currently leads the 4-hour. Health Transformation Workshops, 3-Day Juice Fast and now co-hosts
+                    the Ultimate Health Challenge along with Subah. Till date, Himadri has <strong>hosted more workshops
+                      for over 6000 people.</strong>
                   </p>
                   <p class="host-detail-text">
-                    She chose the path of natural healing when she saw immense improvement in her father's health. That inspired her to make this the purpose of her own life: <strong>to share health wisdom with the world</strong> in easily, applicable terms.
+                    She chose the path of natural healing when she saw immense improvement in her father's health. That
+                    inspired her to make this the purpose of her own life: <strong>to share health wisdom with the
+                      world</strong> in easily, applicable terms.
                   </p>
                 </div>
                 <span class="read-more-text button">
@@ -2686,9 +2741,16 @@
   const sidebar = document.querySelector(".sidebar");
   function getSessionDetails(sessionType) {
     if (sessionType === "multi") {
-      wsIconboxes.forEach(wsIconbox => {
-        wsIconbox.style.height = "194px";
-      });
+      // Check the screen width
+      if (window.innerWidth < 1024) {
+        if (wsIconboxes.length > 2) { // Ensure there are at least 2 elements
+          wsIconboxes[2].style.height = "120px"; // Set the height for the 2nd element
+        }
+      } else {
+        wsIconboxes.forEach(wsIconbox => {
+          wsIconbox.style.height = "194px";
+        });
+      }
       return `
         <h4>Choose Time Slot (IST)</h4>
         <p><svg style="margin-right: 6px;" xmlns="http://www.w3.org/2000/svg" width="22" height="12" viewBox="0 0 22 12" fill="none">
@@ -2702,11 +2764,18 @@
 </svg>Evening: 6-7 PM</p>
       `;
     } else {
-      return `
-        <h4>Choose Time Slot (IST)</h4>
-        <p>6-7 am | 8-9 am</p>
-        <p>4-5 pm | 8-9 pm</p>
-      `;
+      if (window.innerWidth < 1024) {
+        return `
+         <h4>Choose Time Slot (IST)</h4>
+          <p>6-7 am | 8-9 am | 4-5 pm | 8-9 pm</p>
+        `;
+      } else {
+        return `
+          <h4>Choose Time Slot (IST)</h4>
+          <p>6-7 am | 8-9 am</p>
+          <p>4-5 pm | 8-9 pm</p>
+        `;
+      }
     }
   }
 

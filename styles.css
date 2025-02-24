@@ -649,6 +649,10 @@ header > section > nav > ul > li:hover,
   overflow: hidden;
 }
 
+.workshop-details{
+  padding-bottom: 45px;
+}
+
 /* Workshop Iconbox */
 /* Workshop Iconbox */
 .workshop-iconbox {
@@ -676,6 +680,10 @@ header > section > nav > ul > li:hover,
   overflow: hidden;
 }
 
+.ws-iconbox-picture{
+  border-radius: 0px;
+}
+
 .ws-iconbox:nth-child(3) {
   max-width: 242.427px;
 }
@@ -684,11 +692,11 @@ header > section > nav > ul > li:hover,
   box-shadow: 4px 4px 12px #00000012;
 }
 
-.ws-iconbox .image-box img {
+.ws-iconbox .image-box picture {
   transition: all 0.3s ease-in;
 }
 
-.ws-iconbox:hover .image-box img {
+.ws-iconbox:hover .image-box picture {
   scale: 1.1;
   transition: all 0.3s ease-in;
 }
@@ -697,7 +705,7 @@ header > section > nav > ul > li:hover,
   color: #44557c;
   text-align: center;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 22px;
   margin-bottom: 8px;
 }
@@ -908,7 +916,7 @@ header > section > nav > ul > li:hover,
 }
 
 .benefits-sections img {
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease;
   max-height: 244px;
   object-fit: contain;
   object-position: bottom;

@@ -1,15 +1,21 @@
 @media screen and (max-width: 390px) {
+  header {
+    max-height: 56px;
+  }
+  .logo > svg {
+    max-width: 122px;
+  }
   .contact-us {
-    max-width: 150px;
-    max-height: 40px;
-    font-size: 16px;
+    max-width: 122px;
+    max-height: 32px;
+    font-size: 12px;
   }
   .hero-section {
     background-image: url(https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/hero-bg-sm.webp);
   }
-  .workshop-details {
-    background-color: rgb(230, 243, 239);
-  }
+  /* .scroll-section{
+    background: linear-gradient(to bottom, #dbf7f2 0%, #f4f2eb 3%);
+  } */
   .video-section {
     position: relative;
     width: calc(100vw - 40px);
@@ -28,7 +34,7 @@
   .grid-responsive {
     grid-template-columns: repeat(1, 1fr);
   }
-  .benefits-subheading{
+  .benefits-subheading {
     margin-top: 0px;
   }
   .testimonial-div {

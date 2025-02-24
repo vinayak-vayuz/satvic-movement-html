@@ -1129,11 +1129,13 @@ picture:hover img {
   color: #44557c;
   font-size: 22px;
   line-height: 26px;
+  font-weight: 600;
 }
 
 .taTabs__nav--active {
   color: #49887b;
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .taTabs__contentWrap {
@@ -1377,7 +1379,7 @@ picture:hover img {
 }
 .normal-testimoni-name {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 24px;
   text-align: left;
   color: #566890;

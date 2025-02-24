@@ -864,6 +864,7 @@ header > section > nav > ul > li:hover,
 }
 
 .workshop-include-section-image-parent {
+  width: 100%;
   max-width: 165px;
 }
 

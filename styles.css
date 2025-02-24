@@ -844,6 +844,10 @@ header > section > nav > ul > li:hover,
   box-shadow: 4px 4px 12px #00000012;
 }
 
+.workshop-included-br{
+  display: none;
+}
+
 .workshop-include-section h5 {
   font-size: 22px;
   line-height: 26px;
@@ -974,6 +978,9 @@ header > section > nav > ul > li:hover,
   padding: 12px 12px;
   border-radius: 10px;
   transition: all 0.3s ease-in;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .habit-item:hover {

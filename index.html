@@ -2170,10 +2170,7 @@
                 <div class="qna__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div class="qna__text" itemprop="text">
                     <p>
-                      An online challenge is a way for participants in many
-                      different locations to come together to create an
-                      online community and achieve a goal together - in this
-                      case it is to move towards our ultimate health.
+                      Once you register, we will share the details with you on your whatsapp and email address. The joining process is very easy.
                     </p>
                   </div>
                 </div>
@@ -2187,10 +2184,7 @@
                 <div class="qna__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div class="qna__text" itemprop="text">
                     <p>
-                      An online challenge is a way for participants in many
-                      different locations to come together to create an
-                      online community and achieve a goal together - in this
-                      case it is to move towards our ultimate health.
+                      Yes, we will be providing 24-hour access to the session recordings. If you're unable to attend the live sessions at 6 AM, 8 AM, 4 PM, or 8 PM (IST), you can watch the recording at your convenience anytime within 24 hours after the session. This way, you can easily stay on track with the challenge.
                     </p>
                   </div>
                 </div>
@@ -2198,21 +2192,18 @@
 
               <details class="qna__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <summary class="qna__question" itemprop="name">
-                  What are the charges for this course?
+                  On what platform will this course be held?
                 </summary>
                 <div class="qna__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div class="qna__text" itemprop="text">
                     <p>
-                      An online challenge is a way for participants in many
-                      different locations to come together to create an
-                      online community and achieve a goal together - in this
-                      case it is to move towards our ultimate health.
+                      The course will be held on the Satvic App. You won't need to switch on your camera or mic. We'll share all the details about accessing the course 7 days before it starts.	
                     </p>
                   </div>
                 </div>
               </details>
 
-              <details class="qna__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <details class="qna__item hidden" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
                 <summary class="qna__question" itemprop="name">
                   Is it necessary to join through a laptop? Can I join using
                   my phone?
@@ -2220,10 +2211,7 @@
                 <div class="qna__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div class="qna__text" itemprop="text">
                     <p>
-                      An online challenge is a way for participants in many
-                      different locations to come together to create an
-                      online community and achieve a goal together - in this
-                      case it is to move towards our ultimate health.
+                      Yes, you can join using your phone. However, it is advisable to join using a laptop for the best learning experience.
                     </p>
                   </div>
                 </div>
@@ -2236,10 +2224,7 @@
                 <div class="qna__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div class="qna__text" itemprop="text">
                     <p>
-                      An online challenge is a way for participants in many
-                      different locations to come together to create an
-                      online community and achieve a goal together - in this
-                      case it is to move towards our ultimate health.
+                      As soon as you register you will receive an email and a whatsapp message with the confirmation details.
                     </p>
                   </div>
                 </div>
@@ -2252,10 +2237,7 @@
                 <div class="qna__answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                   <div class="qna__text" itemprop="text">
                     <p>
-                      An online challenge is a way for participants in many
-                      different locations to come together to create an
-                      online community and achieve a goal together - in this
-                      case it is to move towards our ultimate health.
+                      We encourage you to try your best to join all the sessions, as you'll experience the real benefit by participating fully. However, if you miss a session, don't worry! We provide 24-hour access to the session recordings. Additionally, detailed notes for each session will be available on our app. You can watch the recording at your convenience and attend the next session on time to stay on track.
                     </p>
                   </div>
                 </div>
@@ -2949,16 +2931,14 @@
 </script>
 <!-- QNA -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const loadMoreButton = document.querySelector(".load-more");
-    let hiddenItems = document.querySelectorAll(".qna__item.hidden");
+ document.addEventListener("DOMContentLoaded", function () {
+  const loadMoreButton = document.querySelector(".load-more");
+  const hiddenItems = document.querySelectorAll(".qna__item.hidden");
+  const itemsToShow = 3;  // You can change this number as needed
+  let visibleItemCount = 0;
 
-    // Number of items to show each time the "Load More" button is clicked
-    const itemsToShow = 3;  // You can change this number as needed
-
-    let visibleItemCount = 0;
-
-    loadMoreButton.addEventListener("click", function () {
+  // Event listener for "Load More" button
+  loadMoreButton.addEventListener("click", function () {
       // Show the next set of hidden FAQ items (itemsToShow count)
       for (let i = visibleItemCount; i < visibleItemCount + itemsToShow && i < hiddenItems.length; i++) {
         hiddenItems[i].classList.remove("hidden");
@@ -2973,59 +2953,38 @@
       }
     });
 
-    // Existing details behavior (open/close animation)
-    document.querySelectorAll(".qna__item").forEach((item) => {
-      const minimizeSiblings = true;
-      const question = item.querySelector(".qna__question");
-      const answer = item.querySelector(".qna__answer");
-      const cssDuration = getComputedStyle(answer).getPropertyValue(
-        "--qna-animation-duration"
-      );
-      const animationDuration = Number.parseInt(
-        Number.parseFloat(cssDuration) * (/\ds$/.test(cssDuration) ? 1000 : 1)
-      );
-      const setHeight = () =>
-        answer.style.setProperty("--qna-details-height", `${answer.scrollHeight}px`);
+  // Open/Close animation for FAQ items
+  document.querySelectorAll(".qna__item").forEach(item => {
+    const question = item.querySelector(".qna__question");
+    const answer = item.querySelector(".qna__answer");
 
-      item.classList.add("js-details");
+    const setHeight = () => {
+      answer.style.setProperty("--qna-details-height", `${answer.scrollHeight}px`);
+    };
 
-      const onClick = (event) => {
-        setHeight();
+    const onClick = (event) => {
+      setHeight();
+      item.classList.toggle("is-open");
+      item.classList.add("is-animating");
 
-        let isAnimating = true;
-        item.classList.toggle("is-open");
-        item.classList.add("is-animating");
+      // Handling sibling minimization
+      if (item.open && !item.classList.contains("is-animating")) {
+        item.open = false;
+        return;
+      }
 
-        setTimeout(() => {
-          item.classList.remove("is-animating");
-        }, animationDuration);
+      // Minimize other open items if necessary
+      [...item.parentNode.children]
+        .filter(el => el.classList.contains("js-details") && el !== item)
+        .forEach(el => el.classList.remove("is-open"));
+      
+      setTimeout(() => item.classList.remove("is-animating"), 200); // Based on your animation duration
+    };
 
-        if (item.open) {
-          event.preventDefault();
-          if (isAnimating) return;
-          setTimeout(() => {
-            item.open = false;
-            isAnimating = false;
-          }, animationDuration);
-        }
-
-        if (!minimizeSiblings) return;
-
-        const siblings = [...item.parentNode.children]
-          .filter((el) => el.classList.contains("js-details"))
-          .filter((el) => el !== event.target.parentNode);
-
-        for (const el of siblings) {
-          el.classList.remove("is-open");
-          setTimeout(() => {
-            el.open = false;
-          }, animationDuration);
-        }
-      };
-
-      question.addEventListener("click", onClick);
-    });
+    question.addEventListener("click", onClick);
   });
+});
+
 
 </script>
 <!-- About The Hosts -->

@@ -406,11 +406,11 @@ header > section > nav > ul > li:hover,
   background-repeat: no-repeat;
 }
 
-.uhc-mobile{
+.uhc-mobile {
   display: none;
 }
 
-.text-section{
+.text-section {
   margin-top: -2rem;
 }
 
@@ -649,7 +649,17 @@ header > section > nav > ul > li:hover,
   overflow: hidden;
 }
 
-.workshop-details{
+ /* Once the video is playing, hide the play button until hover */
+ .video-button.playing {
+  display: none;
+}
+
+/* Show play button on hover */
+.video-section:hover > .video-button {
+  display: block;
+}
+
+.workshop-details {
   padding-bottom: 45px;
 }
 
@@ -680,7 +690,7 @@ header > section > nav > ul > li:hover,
   overflow: hidden;
 }
 
-.ws-iconbox-picture{
+.ws-iconbox-picture {
   border-radius: 0px;
 }
 
@@ -844,7 +854,7 @@ header > section > nav > ul > li:hover,
   box-shadow: 4px 4px 12px #00000012;
 }
 
-.workshop-included-br{
+.workshop-included-br {
   display: none;
 }
 
@@ -1215,7 +1225,7 @@ picture:hover img {
 .testimonial-heading {
   display: block;
 }
-.testimonial-heading-mobile{
+.testimonial-heading-mobile {
   display: none;
 }
 

@@ -108,42 +108,31 @@
 
       </div>
       <div class="video-section">
-        <iframe id="hero-video" src="https://www.youtube.com/embed/1zqFp1bY4p8?si=RuwYpJZGfBeBSord" frameborder="0"
-          allow="autoplay; encrypted-media" allowfullscreen
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
-        </iframe>
-        <!-- Play Button -->
-        <!-- <button id="playButton" style="
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            ">
-          <svg xmlns="http://www.w3.org/2000/svg" width="87" height="87" viewBox="0 0 87 87" fill="none">
-            <ellipse cx="43.0581" cy="43.0881" rx="43.0581" ry="43.0881" fill="#EC4646" fill-opacity="0.3" />
-            <path
-              d="M58.6602 45.6852C60.6591 44.5303 60.6591 41.6448 58.6602 40.4899L37.5163 28.274C35.5163 27.1185 33.0156 28.5619 33.0156 30.8717V55.3034C33.0156 57.6132 35.5163 59.0566 37.5163 57.901L58.6602 45.6852Z"
-              fill="#EC4646" />
-          </svg>
-        </button> -->
-        <!-- Pause Button -->
-        <!-- <button id="pauseButton" style="
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              display: none;
-              z-index: 1;
-            ">
-          <svg xmlns="http://www.w3.org/2000/svg" width="87" height="87" viewBox="0 0 87 87" fill="none">
-            <ellipse cx="43.0581" cy="43.0881" rx="43.0581" ry="43.0881" fill="#EC4646" fill-opacity="0.3" />
-            <path
-              d="M58.6602 45.6852C60.6591 44.5303 60.6591 41.6448 58.6602 40.4899L37.5163 28.274C35.5163 27.1185 33.0156 28.5619 33.0156 30.8717V55.3034C33.0156 57.6132 35.5163 59.0566 37.5163 57.901L58.6602 45.6852Z"
-              fill="#EC4646" />
-          </svg>
-        </button> -->
-      </div>
+        <video id="video"
+          poster="https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/hero-video-thumbnail.webp"
+          loop playsinline style="width: 100%; object-fit: cover; z-index: 0; border-radius: 12px;">
+          <source
+            src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/videos/join-the-ultimate-health-challenge-starting-3rd-march-multiple-time-slots-online-workshop.mp4"
+            type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
+        <!-- Single Play/Pause Button -->
+        <button style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      " id="toggleButton" class="video-button">
+          <!-- Initial SVG as Play Button -->
+          <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="87" height="87" viewBox="0 0 87 87" fill="none">
+            <ellipse cx="43.0581" cy="43.0881" rx="43.0581" ry="43.0881" fill="#EC4646" fill-opacity="0.3" />
+            <path
+              d="M58.6602 45.6852C60.6591 44.5303 60.6591 41.6448 58.6602 40.4899L37.5163 28.274C35.5163 27.1185 33.0156 28.5619 33.0156 30.8717V55.3034C33.0156 57.6132 35.5163 59.0566 37.5163 57.901L58.6602 45.6852Z"
+              fill="#EC4646" />
+          </svg>
+        </button>
+      </div>
     </main>
   </section>
   <!-- Workshop IconBox -->
@@ -159,10 +148,10 @@
                   <picture class="ws-iconbox-picture">
                     <!-- Mobile image -->
                     <source srcset="
-                    https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/calendar-sm-2.svg" media="(max-width: 1024px)" />
+                    https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/calendar-sm-2.svg"
+                      media="(max-width: 1024px)" />
                     <!-- Desktop image -->
-                    <img
-                      src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/calendar.svg"
+                    <img src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/calendar.svg"
                       alt="calendar" />
                   </picture>
                 </div>
@@ -221,8 +210,7 @@
                     https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/clock-sm-2.svg
                         " media="(max-width: 1024px)" />
                     <!-- Desktop image -->
-                    <img
-                      src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/clock.svg"
+                    <img src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/clock.svg"
                       alt="Sand Timer" />
                   </picture>
                   <!-- <img width="36" height="36" decoding="async" data-nimg="1" class="icon-list"
@@ -255,8 +243,7 @@
                     https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/world-sm.svg
                         " media="(max-width: 1024px)" />
                     <!-- Desktop image -->
-                    <img
-                      src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/world.svg"
+                    <img src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/world.svg"
                       alt="World" />
                   </picture>
                   <!-- <img width="36" height="36" decoding="async" data-nimg="1" class="icon-list"
@@ -288,8 +275,7 @@
                     https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/rupee-sm-2.svg
                         " media="(max-width: 1024px)" />
                     <!-- Desktop image -->
-                    <img
-                      src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/rupee.svg"
+                    <img src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/icons/workshop/detail/rupee.svg"
                       alt="Rupee" />
                   </picture>
                   <!-- <img width="36" height="36" decoding="async" data-nimg="1" class="icon-list"
@@ -2654,27 +2640,43 @@
 <!-- Video Player -->
 
 <script>
-  document
-    .getElementById("playButton")
-    .addEventListener("click", function () {
-      var video = document.getElementById("video");
-      var playButton = document.getElementById("playButton");
-      var pauseButton = document.getElementById("pauseButton");
-      video.play();
-      playButton.style.display = "none"; // Hide play button
-      // pauseButton.style.display = "block";
-    });
+  const video = document.getElementById("video");
+  const toggleButton = document.getElementById("toggleButton");
+  const playIcon = document.getElementById("playIcon");
 
-  // document
-  //   .getElementById("pauseButton")
-  //   .addEventListener("click", function () {
-  //     var video = document.getElementById("video");
-  //     var playButton = document.getElementById("playButton");
-  //     var pauseButton = document.getElementById("pauseButton");
-  //     video.pause();
-  //     playButton.style.display = "block"; // Show play button
-  //     pauseButton.style.display = "none"; // Hide pause button
-  //   });
+  // Function to switch between play and pause icons
+  function togglePlayPause() {
+    if (video.paused) {
+      // Play video
+      video.play();
+      // Change SVG to Pause Icon
+      playIcon.innerHTML = `
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M34.4295 0C15.4456 0 0 15.4456 0 34.4295C0 53.4134 15.4456 68.8589 34.4295 68.8589C53.4134 68.8589 68.8589 53.4134 68.8589 34.4295C68.8589 15.4456 53.4134 0 34.4295 0Z" fill="#737373" fill-opacity="0.4"/>
+        <rect x="23.6094" y="23.6094" width="7.86959" height="23.6088" fill="white"/>
+        <rect x="39.3496" y="23.6094" width="7.86959" height="23.6088" fill="white"/>
+      `;
+      toggleButton.classList.add('playing'); // Add class when video is playing
+    } else {
+      // Pause video
+      video.pause();
+      // Change SVG back to Play Icon
+      playIcon.innerHTML = `
+        <ellipse cx="43.0581" cy="43.0881" rx="43.0581" ry="43.0881" fill="#EC4646" fill-opacity="0.3" />
+        <path
+          d="M58.6602 45.6852C60.6591 44.5303 60.6591 41.6448 58.6602 40.4899L37.5163 28.274C35.5163 27.1185 33.0156 28.5619 33.0156 30.8717V55.3034C33.0156 57.6132 35.5163 59.0566 37.5163 57.901L58.6602 45.6852Z"
+          fill="#EC4646" />
+      `;
+      toggleButton.classList.remove('playing'); // Remove class when video is paused
+    }
+  }
+
+  // Attach event listener to the button
+  toggleButton.addEventListener("click", togglePlayPause);
+
+  // Reset button visibility on video end
+  video.addEventListener("ended", () => {
+    toggleButton.classList.remove('playing'); // Remove playing class
+  });
 </script>
 <!-- Countdown timer -->
 <script>

@@ -2529,6 +2529,7 @@ picture:hover img {
   color: white;
   font-size: 14px;
   font-weight: 700;
+  line-height: unset;
 }
 .step.empty .circle {
   visibility: hidden;

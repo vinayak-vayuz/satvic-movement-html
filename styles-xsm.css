@@ -37,16 +37,10 @@
   .benefits-subheading {
     margin-top: 0px;
   }
-  .testimonial-div {
-    padding-top: 0px !important;
-  }
-  .testimonial-heading {
-    display: none;
-  }
+
+ 
   .whats-say-subheading {
     font-size: 16px;
   }
-  .testimonial-heading-mobile {
-    display: block;
-  }
+ 
 }

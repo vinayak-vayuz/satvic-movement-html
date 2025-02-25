@@ -1212,7 +1212,9 @@ picture:hover img {
   transition: all 0.3s ease-in;
   margin-bottom: 20px;
 }
-
+.testimonial-heading {
+  display: block;
+}
 .testimonial-heading-mobile{
   display: none;
 }

@@ -84,6 +84,11 @@ select {
   color: inherit;
 }
 
+select{
+  appearance: auto;
+  -webkit-appearance: auto
+}
+
 /* Remove default styling for anchors */
 a {
   text-decoration: none;

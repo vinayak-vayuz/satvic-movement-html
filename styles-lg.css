@@ -216,7 +216,7 @@
     flex-direction: column;
   }
   .ws-iconbox {
-    max-width: 100%;
+    max-width: 100% !important;
     cursor: pointer;
   }
 

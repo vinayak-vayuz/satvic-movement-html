@@ -84,9 +84,10 @@ select {
   color: inherit;
 }
 
-select{
+select {
   appearance: auto;
-  -webkit-appearance: auto
+  -webkit-appearance: auto;
+  border-right: 8px solid transparent;
 }
 
 /* Remove default styling for anchors */
@@ -654,8 +655,8 @@ header > section > nav > ul > li:hover,
   overflow: hidden;
 }
 
- /* Once the video is playing, hide the play button until hover */
- .video-button.playing {
+/* Once the video is playing, hide the play button until hover */
+.video-button.playing {
   display: none;
 }
 
@@ -2207,7 +2208,6 @@ picture:hover img {
   height: 42px;
   padding: 5px 15px;
   padding-left: 0.5rem;
-  margin-right: 0.5rem;
 }
 
 .form-select option {

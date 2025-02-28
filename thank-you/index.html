@@ -125,14 +125,13 @@
               <!-- Step 1: Review Contact Details -->
               <div id="step1" class="ty-card ty-review-card">
                 <h3>Review Your Contact Details</h3>
-                <div class="ty-form-group-parent">
+                <!-- <div class="ty-form-group-parent">
                   <label>Email ID (Optional)</label>
                   <div class="ty-form-group">
                     <input
                       type="email"
                       id="currentEmail"
                       value="Ravi@gmail.com"
-                  
                     />
                     <svg
                       onclick="goToEdit()"
@@ -159,7 +158,7 @@
                       />
                     </svg>
                   </div>
-                </div>
+                </div> -->
 
                 <div class="ty-form-group-parent">
                   <label>WhatsApp Number</label>
@@ -169,11 +168,10 @@
                       id="phone"
                       name="phone"
                       value="+91 8269989915"
-                   
                     />
                     <svg
                       style="cursor: pointer"
-                      onclick="goToEditNumber()"
+                      onclick="goToEdit()"
                       xmlns="http://www.w3.org/2000/svg"
                       width="19"
                       height="19"
@@ -209,19 +207,20 @@
                 >
               </div>
 
-              <!-- Step 2: Edit Email -->
+              <!-- Step 2: Edit Number -->
               <div id="step2" class="ty-card" style="display: none">
-                <h3>New Email</h3>
+                <h3>New WhatsApp Number</h3>
                 <div class="ty-form-group">
-                  <label>Email ID</label>
+                  <label>WhatsApp Number</label>
                   <input
-                    type="email"
-                    id="newEmail"
-                    placeholder="Enter new email"
-                  />
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value="+91 8269989915"
+                />
                 </div>
                 <button class="ty-form-button" onclick="updateEmail()">
-                  <div class="ty-form-button-text">Update Email</div>
+                  <div class="ty-form-button-text">Update WhatsApp Number</div>
                   <img
                     style="width: 14px"
                     width="14"
@@ -252,7 +251,7 @@
                 </button>
               </div>
 
-              <!-- Step 3: Verify Email -->
+              <!-- Step 3: Verify Number -->
               <div id="step3" class="ty-card" style="display: none">
                 <h3>
                   We have sent a code to

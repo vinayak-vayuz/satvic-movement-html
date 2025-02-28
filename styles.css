@@ -1768,7 +1768,7 @@ picture:hover img {
 .sidebar {
   overflow: auto;
   position: sticky;
-  top: 5%;
+  top: 15%;
   width: 100%;
   height: 100%;
   max-width: 247px;

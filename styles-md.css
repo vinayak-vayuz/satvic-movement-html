@@ -128,13 +128,13 @@
   .habit-seven {
     height: 102px;
     background: rgba(191, 229, 221, 0.2);
-    padding: 10px 10px 10px 0;
+    padding: 10px;
   }
   .habit-item .mb-20 {
     margin-bottom: 0px !important;
     margin-right: 10px;
   }
-  .habit-item img {
+  .habit-item img, .habit-seven-img img {
     min-width: 82px;
   }
   .habit-seven .width-40 {
@@ -143,9 +143,7 @@
   .habit-seven .width-60 {
     width: 100%;
   }
-  .habit-seven-img img {
-    min-width: 90px;
-  }
+ 
   .habit-seven-img {
     margin-right: 10px;
   }

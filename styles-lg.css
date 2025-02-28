@@ -260,6 +260,9 @@
   .habit-item {
     height: auto;
   }
+  .habit-item:hover img, .habit-seven:hover img{
+    scale: 1;
+  }
   .habit-text > br {
     display: none;
   }

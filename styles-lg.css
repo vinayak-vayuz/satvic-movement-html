@@ -12,6 +12,9 @@
   header > section > nav {
     display: none;
   }
+  .text-section {
+    margin-top: -3rem;
+  }
 
   .uhc-mobile {
     display: block;

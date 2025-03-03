@@ -6,6 +6,9 @@
   .scroll-section {
     background: linear-gradient(to bottom, #dbf7f2 0%, #f4f2eb 3%);
   }
+  header {
+    position: relative;
+  }
   header > section > nav {
     display: none;
   }
@@ -14,12 +17,13 @@
     display: block;
     width: 100%;
     position: fixed;
-    bottom: 0;
+    bottom: 8px;
     background-color: #f2e3c4;
     display: flex;
     justify-content: space-between;
     padding: 11px 24px;
     border-radius: 12px 12px 0px 0px;
+    transition: all 0.3s ease-in-out;
   }
 
   .uhc-mobile-text h5 {
@@ -260,7 +264,8 @@
   .habit-item {
     height: auto;
   }
-  .habit-item:hover img, .habit-seven:hover img{
+  .habit-item:hover img,
+  .habit-seven:hover img {
     scale: 1;
   }
   .habit-text > br {
@@ -311,7 +316,7 @@
   .register-form-bottom {
     margin-top: 34px;
   }
-  .footer-bottom {
+  /* .footer-bottom {
     margin-bottom: 100px;
-}
+} */
 }

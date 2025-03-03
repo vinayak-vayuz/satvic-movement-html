@@ -2524,7 +2524,7 @@
   <section class="uhc-mobile">
     <div class="uhc-mobile-text">
       <h5>Ultimate Health Challenge</h5>
-      <p>Reach your peak health in 21 days</p>
+      <p>Reach your peak health</p>
     </div>
     <a href="#register-now-form" class="uhc-mobile-button">Register</a>
   </section>
@@ -2627,7 +2627,6 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Video Player -->
-
 <script>
   const video = document.getElementById("video");
   const toggleButton = document.getElementById("toggleButton");
@@ -2820,6 +2819,7 @@
     });
   });
 </script>
+<!-- Modal section -->
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const openModalBtn = document.getElementById("openModalBtn");
@@ -3134,6 +3134,23 @@
 
     // Initialize first page
     goToPage(1);
+  });
+</script>
+<!-- UHC Mobile Section -->
+<script>
+  window.addEventListener('scroll', function() {
+    const uhcSection = document.querySelector('.uhc-mobile');  // Target the section
+    const targetSection = document.querySelector('#register-now-form');  // The section you want to detect crossing
+
+    // Get the position of the target section (for example, the section to trigger the hide action)
+    const targetPosition = targetSection.getBoundingClientRect().top;
+
+    // Check if the user has scrolled past the target section
+    if (targetPosition < 900) {
+      uhcSection.style.display = 'none';  // Hide the section
+    } else {
+      uhcSection.style.display = 'flex';  // Show the section again
+    }
   });
 </script>
 

@@ -30,7 +30,7 @@
   .uhc-mobile-text p {
     padding-top: 4px;
     color: #ce9f50;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
   }
   .uhc-mobile-button {
@@ -312,6 +312,6 @@
     margin-top: 34px;
   }
   .footer-bottom {
-    margin-bottom: 80px;
-  }
+    margin-bottom: 100px;
+}
 }

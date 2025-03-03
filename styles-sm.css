@@ -6,8 +6,6 @@
     height: 40px;
   }
 
-
-  
   header > section > a {
     width: 100%;
     max-width: 122.609px;
@@ -52,12 +50,12 @@
   }
   .benefits-subheading {
     margin-top: 0px;
-}
+  }
   .testimonial-div {
     padding-top: 0px !important;
     margin-top: 20px;
   }
-  .testimonial-main{
+  .testimonial-main {
     margin-top: 0px;
   }
   .testimonial-heading {
@@ -66,5 +64,15 @@
   .testimonial-heading-mobile {
     display: block;
     margin-top: 40px;
+  }
+  .sm-hidden {
+    display: none;
+  }
+  .footer-bottom-ty {
+    height: 125px;
+  }
+  .footer-ul,
+  .ty-footer-ul {
+    flex-direction: column;
   }
 }

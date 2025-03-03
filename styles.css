@@ -238,7 +238,7 @@ a {
 }
 
 .form-gap-responsive {
-  gap: 25px;
+  gap: 20px;
 }
 .gap-1 {
   gap: 4px;
@@ -2333,7 +2333,7 @@ picture:hover img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  /* gap: 14px; */
 }
 
 .footer-data div {

@@ -109,10 +109,10 @@
     padding: 10px;
     align-items: center;
   }
-  .habit-gif, .habit-seven-img{
+  /* .habit-gif, .habit-seven-img{
     width: 86px;
     height: 86px;
-  }
+  } */
   .habit-heading {
     text-align: left;
     font-size: 16px;
@@ -135,7 +135,7 @@
     margin-right: 10px;
   }
   .habit-item img, .habit-seven-img img {
-    min-width: 82px;
+    min-width: 70px;
   }
   .habit-seven .width-40 {
     display: none !important;
@@ -144,7 +144,7 @@
     width: 100%;
   }
  
-  .habit-seven-img {
+  .habit-gif, .habit-seven-img {
     margin-right: 10px;
   }
   .habit-seven > div {

@@ -166,6 +166,9 @@ a {
   height: 100%;
   max-width: 344px;
 }
+.inr {
+  font-weight: 400;
+}
 
 .bg-F4F2EB {
   background-color: var(--bg-color);
@@ -730,7 +733,7 @@ header > section > nav > ul > li:hover,
 .ws-iconbox-text > p {
   color: #49887b;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 21px;
   margin-bottom: 5px;
 }
@@ -1007,12 +1010,12 @@ header > section > nav > ul > li:hover,
 }
 
 .habit-item img {
-  width: 90px;
+  width: 80px;
   transition: all 0.3s ease-in;
 }
 
 .habit-item:hover img {
-  scale: 1.2;
+  scale: 1.1;
   transition: all 0.3s ease-in;
 }
 
@@ -1049,12 +1052,11 @@ header > section > nav > ul > li:hover,
 }
 
 .habit-seven-img {
-  width: 99px;
-  height: 95px;
+  width: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in;
 }
 
 .habit-seven:hover {
@@ -1063,7 +1065,7 @@ header > section > nav > ul > li:hover,
 }
 
 .habit-seven:hover img {
-  scale: 1.2;
+  scale: 1.1;
   transition: all 0.3s ease-in;
 }
 
@@ -1230,7 +1232,7 @@ picture:hover img {
   margin-bottom: 20px;
   margin-top: 45px;
 }
-.testimonial-main{
+.testimonial-main {
   margin-top: 45px;
 }
 .testimonial-heading {
@@ -1520,7 +1522,7 @@ picture:hover img {
 
 .modal-content > h2 {
   font-size: 18px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   margin-bottom: 15px;
 }
 

@@ -24,7 +24,7 @@
   <body class="bg-F4F2EB">
     <!-- Hero -->
     <div class="hero-section-ty hero-clip-path-ty bg-F4F2EB">
-      <main class="container-class">
+      <main class="container-class ty-container">
         <h3>
           Thank You Shiv
           <img
@@ -40,7 +40,9 @@
         <div
           class="mt-20 d-flex align-items-center justify-items-center gap-10"
         >
-          <div class="d-flex align-items-center justify-items-center gap-1">
+          <div
+            class="d-flex align-items-center justify-items-center gap-1 ty-session-date"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -65,10 +67,23 @@
             </svg>
             <span>Starts on 2nd Dec</span>
           </div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="2" height="20" viewBox="0 0 2 20" fill="none">
-            <path d="M1 1L1 19" stroke="#49887B" stroke-width="0.8" stroke-linecap="round"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2"
+            height="20"
+            viewBox="0 0 2 20"
+            fill="none"
+          >
+            <path
+              d="M1 1L1 19"
+              stroke="#49887B"
+              stroke-width="0.8"
+              stroke-linecap="round"
+            />
           </svg>
-          <div class="d-flex align-items-center justify-items-center gap-1">
+          <div
+            class="d-flex align-items-center justify-items-center gap-1 ty-session-time"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -165,7 +180,7 @@
                   <div class="ty-form-group">
                     <input
                       type="tel"
-                      id="phone"
+                      id="currentPhone"
                       name="phone"
                       value="+91 8269989915"
                     />
@@ -201,7 +216,7 @@
                   >Issue registering mobile number?
                   <a
                     target="_blank"
-                    href="https://api.whatsapp.com/send/?phone=917499014868&text&type=phone_number&app_absent=0"
+                    href="https://api.whatsapp.com/send?phone=917499014868&text=I+need+support"
                     >Contact Us</a
                   ></span
                 >
@@ -213,11 +228,11 @@
                 <div class="ty-form-group">
                   <label>WhatsApp Number</label>
                   <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value="+91 8269989915"
-                />
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value="+91 8269989915"
+                  />
                 </div>
                 <button class="ty-form-button" onclick="updateEmail()">
                   <div class="ty-form-button-text">Update WhatsApp Number</div>
@@ -255,7 +270,7 @@
               <div id="step3" class="ty-card" style="display: none">
                 <h3>
                   We have sent a code to
-                  <div id="displayEmail">example@gmail.com</div>
+                  <div id="displayPhone">example@gmail.com</div>
                 </h3>
                 <div class="ty-form-group">
                   <input type="text" id="otp" placeholder="Enter OTP" />
@@ -384,10 +399,12 @@
     <!-- Footer -->
     <footer class="footer-bottom-ty">
       <div class="container-class footer-data-ty">
-        <img
-          class="logo-footer-ty"
-          src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/sm-footer-logo.svg"
-        />
+        <a href="/">
+          <img
+            class="logo-footer-ty"
+            src="https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/sm-footer-logo.svg"
+          />
+        </a>
         <div class="ty-footer-ul">
           <span>&copy; 2025 Satvic Movement </span> <span>|</span>
           <a
@@ -474,21 +491,21 @@
     }
 
     function updateEmail() {
-      let newEmail = document.getElementById("newEmail").value;
-      if (newEmail) {
-        document.getElementById("displayEmail").textContent = newEmail;
+      let newPhone = document.getElementById("phone").value;
+      if (newPhone) {
+        document.getElementById("displayPhone").textContent = newPhone;
         document.getElementById("step2").style.display = "none";
         document.getElementById("step3").style.display = "block";
       } else {
-        alert("Please enter a valid email.");
+        alert("Please enter a valid WhatsApp number.");
       }
     }
 
     function verifyOtp() {
       let otp = document.getElementById("otp").value;
       if (otp.length === 4) {
-        document.getElementById("currentEmail").value =
-          document.getElementById("displayEmail").textContent;
+        document.getElementById("currentPhone").value =
+          document.getElementById("displayPhone").textContent;
         goBack();
       } else {
         alert("Enter a valid 4-digit OTP.");

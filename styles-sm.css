@@ -5,6 +5,8 @@
     max-width: 122.222px;
     height: 40px;
   }
+
+
   
   header > section > a {
     width: 100%;
@@ -53,11 +55,16 @@
 }
   .testimonial-div {
     padding-top: 0px !important;
+    margin-top: 20px;
+  }
+  .testimonial-main{
+    margin-top: 0px;
   }
   .testimonial-heading {
     display: none;
   }
   .testimonial-heading-mobile {
     display: block;
+    margin-top: 40px;
   }
 }

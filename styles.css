@@ -2571,9 +2571,9 @@ picture:hover img {
   align-items: center;
   text-align: center;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: unset;
+  line-height: 0px;
 }
 .step.empty .circle {
   visibility: hidden;
@@ -2770,9 +2770,9 @@ picture:hover img {
 .ty-counter-card h6 {
   color: #49887b;
   text-align: center;
-  font-size: 20.872px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 13px;
+  line-height: 18px;
 }
 
 .ty-counter-card p {

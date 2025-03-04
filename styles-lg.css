@@ -20,13 +20,13 @@
     display: block;
     width: 100%;
     position: fixed;
-    bottom: 8px;
+    bottom: 14px;
     background-color: #f2e3c4;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 11px 24px;
-    border-radius: 12px 12px 0px 0px;
+    /* border-radius: 12px 12px 0px 0px; */
     transition: all 0.3s ease-in-out;
   }
 

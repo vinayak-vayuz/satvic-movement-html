@@ -1952,7 +1952,7 @@ picture:hover img {
 
 .qna__question {
   position: relative;
-  padding: 0px 50px 10px 0px;
+  padding: 0px 20px 10px 0px;
   list-style: none;
   cursor: pointer;
   user-select: none;

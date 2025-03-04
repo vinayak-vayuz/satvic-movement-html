@@ -2524,7 +2524,7 @@
   <section class="uhc-mobile">
     <div class="uhc-mobile-text">
       <h5>Ultimate Health Challenge</h5>
-      <p>Reach your peak health</p>
+      <p id="uhc-changing-text">Reach your peak health</p>
     </div>
     <a href="#register-now-form" class="uhc-mobile-button">Register</a>
   </section>
@@ -2625,6 +2625,39 @@
     </div>
   </div>
 </body>
+<!-- UHC -->
+ <script>
+  const sentences = [
+  "Reach your peak health",
+  "Unlock your full potential",
+  "Live a healthier life"
+];
+
+let currentSentenceIndex = 0;
+const textElement = document.getElementById('uhc-changing-text');
+
+function changeText() {
+  // Fade out the text first
+  textElement.classList.add('fade');
+
+  // Wait for the fade to complete before updating text
+  setTimeout(() => {
+    // Update the text
+    textElement.textContent = sentences[currentSentenceIndex];
+
+    // Fade in the new text
+    textElement.classList.remove('fade');
+
+    // Increment index for next sentence
+    currentSentenceIndex = (currentSentenceIndex + 1) % sentences.length;
+  }, 500); // Match this duration with the fade-out time
+}
+
+// Change text every 3 seconds
+setInterval(changeText, 3000); 
+
+
+ </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Video Player -->
 <script>

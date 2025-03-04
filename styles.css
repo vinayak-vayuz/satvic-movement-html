@@ -421,6 +421,25 @@ header > section > nav > ul > li:hover,
   display: none;
 }
 
+.uhc-mobile-text {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* This ensures p comes below h5 */
+  align-items: flex-start; /* Align text to the left */
+}
+
+#uhc-changing-text {
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#uhc-changing-text.fade {
+  opacity: 0;
+}
+
+
 .text-section {
   margin-top: 1rem;
 }
@@ -1195,7 +1214,7 @@ picture:hover img {
 }
 
 .pr-info-title {
-  color: #666666;
+  color: #4A4A4A;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;

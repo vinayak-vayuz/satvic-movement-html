@@ -6,9 +6,9 @@
     max-width: 122px;
   }
   .contact-us {
-    max-width: 122px;
-    max-height: 32px;
-    font-size: 12px;
+    max-width: 150px;
+    max-height: 36px;
+    font-size: 14px;
   }
   .hero-section {
     background-image: url(https://satvic-new-website.s3.ap-south-1.amazonaws.com/images/workshop/detail/hero-bg-sm.webp);
@@ -41,12 +41,26 @@
   .benefits-subheading {
     margin-top: 0px;
   }
+  .scholarship-terms {
+    font-size: 12px;
+  }
+  #scholarshipForm > p {
+    font-size: 10px;
+  }
 
+  .scholarshipFormInput {
+    height: 40px;
+  }
   .whats-say-subheading {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 370px) {
+  .contact-us {
+    max-width: 122px;
+    max-height: 32px;
+    font-size: 12px;
+  }
   .ws-iconbox:nth-child(3) {
     max-width: 100%;
     height: 80px;

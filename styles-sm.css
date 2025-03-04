@@ -27,7 +27,7 @@
   .workshop-include-section-image-parent {
     max-width: 246px;
     position: absolute;
-    top: -8rem;
+    top: -7rem;
   }
   .grid-responsive {
     grid-template-columns: repeat(1, 1fr);

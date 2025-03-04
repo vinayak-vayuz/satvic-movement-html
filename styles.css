@@ -908,13 +908,13 @@ header > section > nav > ul > li:hover,
   max-width: 165px;
 }
 
-.workshop-include-section img {
+.workshop-include-section svg {
   width: 100%;
   height: auto;
   transition: all 0.3s ease-in;
 }
 
-.workshop-include-section:hover img {
+.workshop-include-section:hover svg {
   scale: 1.05;
   transition: all 0.3s ease-in;
 }
@@ -2246,6 +2246,9 @@ picture:hover img {
 .iti {
   width: 100%;
 }
+/* .iti__flag-container {
+  display: none !important;
+} */
 .form-info-text {
   color: #fff;
   text-align: center;

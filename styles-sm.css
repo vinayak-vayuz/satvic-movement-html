@@ -5,7 +5,9 @@
     max-width: 122.222px;
     height: 40px;
   }
-
+  .mt-responsive {
+    margin-top: 35px;
+  }
   header > section > a {
     width: 100%;
     max-width: 122.609px;
@@ -63,7 +65,6 @@
   }
   .testimonial-heading-mobile {
     display: block;
-    margin-top: 40px;
   }
   .sm-hidden {
     display: none;

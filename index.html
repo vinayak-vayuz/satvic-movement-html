@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./styles-lg.css" />
   <link rel="stylesheet" href="../styles-xl.css" />
   <!-- Intl-Tel-Input CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.3/build/css/intlTelInput.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/25.2.1/build/css/intlTelInput.min.css" />
 </head>
 
 <body class="bg-F4F2EB">
@@ -2397,8 +2397,8 @@
                   <input class="form-input" type="text" placeholder="Name*" required />
                   <!-- <div class="form-error">Please enter name</div> -->
                 </div>
-                <div class="width-responsive phone-input">
-                  <input class="w-full form-input" type="tel" id="phone" name="phone" placeholder="WhatsApp Number*"
+                <div class="width-responsive phone-input register-now-phone">
+                  <input  class="w-full form-input" type="tel" id="phone" name="phone" placeholder="WhatsApp Number*"
                     required />
                   <!-- <div class="form-error">
                     Please enter valid WhatsApp Number
@@ -2690,7 +2690,35 @@
 <!-- JQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Intl-Tel-Input -->
-<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.3/build/js/intlTelInput.min.js"></script>
+ <!-- Phone Input -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/25.2.1/build/js/intlTelInput.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all input fields with type="tel"
+    const phoneInputs = document.querySelectorAll('input[type="tel"]');
+
+    phoneInputs.forEach((phoneInput) => {
+      const iti = window.intlTelInput(phoneInput, {
+        initialCountry: "in",
+        // showFlags: false,
+        separateDialCode: true,
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/25.2.1/build/js/utils.min.js",
+      });
+
+      // Log selected country code on change
+      phoneInput.addEventListener("countrychange", function () {
+        console.log(
+          "Selected country for",
+          phoneInput,
+          ":",
+          iti.getSelectedCountryData()
+        );
+      });
+    });
+  });
+</script>
+
 <!-- UHC -->
 <script>
   window.addEventListener('scroll', function () {
@@ -3143,32 +3171,7 @@
     });
   });
 </script>
-<!-- Phone Input -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Select all input fields with type="tel"
-    const phoneInputs = document.querySelectorAll('input[type="tel"]');
 
-    phoneInputs.forEach((phoneInput) => {
-      const iti = window.intlTelInput(phoneInput, {
-        initialCountry: "in", // Default country (India)
-        separateDialCode: true, // Displays the country code separately
-        utilsScript:
-          "https://cdn.jsdelivr.net/npm/intl-tel-input@19.5.3/build/js/utils.js",
-      });
-
-      // Log selected country code on change
-      phoneInput.addEventListener("countrychange", function () {
-        console.log(
-          "Selected country for",
-          phoneInput,
-          ":",
-          iti.getSelectedCountryData()
-        );
-      });
-    });
-  });
-</script>
 <!-- Pagination -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {

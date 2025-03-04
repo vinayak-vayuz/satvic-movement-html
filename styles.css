@@ -439,7 +439,6 @@ header > section > nav > ul > li:hover,
   opacity: 0;
 }
 
-
 .text-section {
   margin-top: 1rem;
 }
@@ -1214,7 +1213,7 @@ picture:hover img {
 }
 
 .pr-info-title {
-  color: #4A4A4A;
+  color: #4a4a4a;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -2248,7 +2247,18 @@ picture:hover img {
 }
 /* .iti__flag-container {
   display: none !important;
+}
+.iti__flag,
+.iti__flag-box {
+  display: none;
+}
+.iti--separate-dial-code .iti__selected-dial-code {
+  margin-left: 0;
 } */
+
+.register-now-phone  .iti__selected-dial-code{
+  color: white;
+}
 .form-info-text {
   color: #fff;
   text-align: center;

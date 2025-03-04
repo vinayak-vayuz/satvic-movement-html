@@ -32,7 +32,7 @@
     margin-bottom: 2px;
   }
   .image-box > picture {
-    margin-top: 6px;
+    margin-top: 4px;
     width: 20px;
     height: 20px;
   }
@@ -134,7 +134,8 @@
     margin-bottom: 0px !important;
     margin-right: 10px;
   }
-  .habit-item img, .habit-seven-img img {
+  .habit-item img,
+  .habit-seven-img img {
     min-width: 70px;
   }
   .habit-seven .width-40 {
@@ -143,8 +144,9 @@
   .habit-seven .width-60 {
     width: 100%;
   }
- 
-  .habit-gif, .habit-seven-img {
+
+  .habit-gif,
+  .habit-seven-img {
     margin-right: 10px;
   }
   .habit-seven > div {
@@ -246,9 +248,6 @@
     padding: 0px 15px;
   }
 
-  .form-gap-responsive {
-    gap: 10px;
-  }
   .radio-group label {
     max-width: 65px;
   }

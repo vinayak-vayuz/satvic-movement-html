@@ -316,7 +316,10 @@
     font-size: 12px;
   }
   .form-input-container {
-    gap: 10px;
+    gap: 20px;
+  }
+  .form-gap-responsive {
+    gap: 20px;
   }
   .register-box {
     max-height: 100%;

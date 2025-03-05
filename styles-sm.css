@@ -76,4 +76,7 @@
   .ty-footer-ul {
     flex-direction: column;
   }
+  .step.active .circle .number {
+    padding-top: 4px;
+  }
 }

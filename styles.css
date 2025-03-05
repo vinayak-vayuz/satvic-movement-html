@@ -2571,6 +2571,7 @@ picture:hover img {
   justify-content: center;
   align-items: center;
 }
+
 .step.active .circle .number {
   width: 20px;
   height: 20px;
@@ -2767,14 +2768,14 @@ picture:hover img {
 
 .ty-counter-card {
   width: 55px;
-  height: 49.049px;
+  height: 49px;
   border-radius: 10.436px;
   background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+  gap: 0px;
   box-shadow: 0px 4.174px 20.872px 0px rgba(43, 43, 43, 0.14);
 }
 
@@ -2783,7 +2784,7 @@ picture:hover img {
   text-align: center;
   font-size: 20px;
   font-weight: 700;
-  line-height: 18px;
+  line-height: 20px;
 }
 
 .ty-counter-card p {

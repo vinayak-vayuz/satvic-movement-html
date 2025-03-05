@@ -54,6 +54,9 @@
   .whats-say-subheading {
     font-size: 16px;
   }
+  .workshop-included-br {
+    display: block;
+  }
 }
 @media screen and (max-width: 370px) {
   .contact-us {

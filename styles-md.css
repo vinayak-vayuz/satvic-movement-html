@@ -59,6 +59,9 @@
     font-size: 28px;
     margin-bottom: 10px;
   }
+  .workshop-include-section {
+    text-align: center !important;
+  }
   .workshop-include-section .d-flex {
     flex-direction: column;
   }

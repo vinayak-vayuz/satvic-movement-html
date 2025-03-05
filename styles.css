@@ -907,13 +907,13 @@ header > section > nav > ul > li:hover,
   max-width: 165px;
 }
 
-.workshop-include-section svg {
+.workshop-include-section img {
   width: 100%;
   height: auto;
   transition: all 0.3s ease-in;
 }
 
-.workshop-include-section:hover svg {
+.workshop-include-section:hover img {
   scale: 1.05;
   transition: all 0.3s ease-in;
 }

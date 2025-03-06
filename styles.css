@@ -672,7 +672,7 @@ header > section > nav > ul > li:hover,
 }
 .video-section {
   position: relative;
-  width: 529px;
+  width: 528px;
   height: 297px;
   border-radius: 13px;
   overflow: hidden;
@@ -684,9 +684,9 @@ header > section > nav > ul > li:hover,
 }
 
 /* Show play button on hover */
-.video-section:hover > .video-button {
+/* .video-section:hover > .video-button {
   display: block;
-}
+} */
 
 .workshop-details {
   padding-bottom: 45px;
@@ -1619,6 +1619,7 @@ picture:hover img {
 }
 
 .scholarship-terms-parent {
+  visibility: hidden;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -2312,7 +2313,7 @@ picture:hover img {
   align-items: center;
   gap: 5px;
   font-size: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 .terms a {
   text-decoration: underline;

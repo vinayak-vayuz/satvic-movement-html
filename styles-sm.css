@@ -1,17 +1,26 @@
 @media screen and (max-width: 640px) {
+  header > section > a {
+    width: 100%;
+    max-width: 122.609px;
+    height: 30px;
+  }
+  .video-section{
+    height: 201px !important;
+  }
+
   .logo {
     margin-left: -16px;
     margin-top: -12px;
     max-width: 122.222px;
     height: 40px;
   }
+  .contact-us {
+    max-width: 150px;
+    max-height: 36px;
+    font-size: 14px;
+  }
   .mt-responsive {
     margin-top: 35px;
-  }
-  header > section > a {
-    width: 100%;
-    max-width: 122.609px;
-    height: 30px;
   }
   .workshop-include-main {
     margin-top: 9rem;
@@ -30,6 +39,12 @@
     max-width: 246px;
     position: absolute;
     top: -8rem;
+  }
+  .workshop-not-for{
+    font-size: 24px !important;
+  }
+  .workshop-not-subheading{
+font-size: 14px;
   }
   .grid-responsive {
     grid-template-columns: repeat(1, 1fr);

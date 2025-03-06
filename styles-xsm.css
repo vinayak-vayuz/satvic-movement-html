@@ -5,6 +5,9 @@
   .logo > svg {
     max-width: 122px;
   }
+  .video-section{
+    height: 187px !important;
+  }
   .contact-us {
     max-width: 150px;
     max-height: 36px;
@@ -19,7 +22,7 @@
   .video-section {
     position: relative;
     width: calc(100vw - 40px);
-    height: 231px;
+    height: 185px;
     border-radius: 13px;
     overflow: hidden;
     /* margin: 0 10px; */
@@ -68,5 +71,8 @@
   .ws-iconbox:nth-child(3) {
     max-width: 100%;
     height: 80px;
+  }
+  .video-section{
+    height: 174px !important;
   }
 }
